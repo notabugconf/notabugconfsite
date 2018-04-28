@@ -1,3 +1,21 @@
 .title-container {
-  background-color: green;
+  background-image: url("../images/bug_wallp.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.title-container > .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(11, 12, 250, 0.85);
+  z-index: 1;
+}
+
+.title-container > .inner {
+  position: relative;
+  z-index: 2;
 }
