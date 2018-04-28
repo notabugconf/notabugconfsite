@@ -12,11 +12,15 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(11, 12, 250, 0.85);
+  background-color: rgba(0, 1, 132, 0.77);
   z-index: 1;
 }
 
 .title-container > .inner {
   position: relative;
   z-index: 2;
+}
+
+.speaker-img {
+  max-width: 200px;
 }
