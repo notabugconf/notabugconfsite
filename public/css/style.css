@@ -24,3 +24,8 @@
 .speaker-img {
   max-width: 200px;
 }
+
+.sponsor-img {
+  max-width: 300px;
+  margin: 5px;
+}
