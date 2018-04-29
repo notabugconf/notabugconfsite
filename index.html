@@ -46,7 +46,10 @@
             <p>
               Inviaci il tuo talk entro e non oltre il 1 Giugno 2018, con una breve descrizione di quello che andrai a trattare
             </p>
-            <button type="button" class="btn btn-primary" style="background-color: #ee2f7a;border: none; " onclick="location.href='mailto:cfp@notabugconf.it;'">👉 Invia il tuo talk 👈 </button>
+            <button type="button" 
+                    class="btn btn-primary" 
+                    style="background-color: #ee2f7a;border: none; " 
+                    onclick="location.href='mailto:cfp@notabugconf.it;'">👉 Invia il tuo talk 👈 </button>
 
           </div>
         </div>
@@ -115,7 +118,10 @@
         </div>
         <% _.forEach(sponsors, function(sponsor) { %>
             <div class="col-lg-4">
-                <img class="sponsor-img img-fluid mx-auto" src="public/images/sponsors/<%- sponsor.image %>">
+                <a href="<%- sponsor.url %>">
+                  <img class="sponsor-img img-fluid mx-auto grayscale" 
+                       src="public/images/sponsors/<%- sponsor.image %>">
+                </a>
             </div>
         <% }); %> 
       </div>
@@ -124,7 +130,11 @@
         <p>&copy; 2018 Not A Bug Conf &middot;
           <a href="#">Privacy Policy</a> &middot;
           <a href="#">Code Of Conduct</a> &middot;
-          <a href="#">Contattaci</a>
+          <a href="mailto:info@notabugconf.it">Contattaci</a><br>
+
+          <a href="https://www.facebook.com/notabugconf/" target="_blank" rel="nofollow">Facebook</a> &middot;
+          <a href="https://twitter.com/notabugconf" target="_blank" rel="nofollow">Twitter</a> &middot;
+          <a href="https://notabugconf.eventbrite.it" target="_blank" rel="nofollow">Eventbrite</a>
         </p>
         <p>
           <a href="#">Back to top</a>

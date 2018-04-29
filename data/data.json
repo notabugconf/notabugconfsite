@@ -2,11 +2,13 @@
     "sponsors" : [
         {
             "image" : "lotrek.png",
-            "name" : "AAAA"
+            "name" : "AAAA",
+            "url" : "https://lotrek.it"
         },
         {
             "image" : "lotrek.png",
-            "name" : "AAAA"
+            "name" : "AAAA",
+            "url" : "#"
         }
     ],
     "talks" : [
