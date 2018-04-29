@@ -11,13 +11,23 @@ var data = require('./data/data.json');
 
 
 gulp.task('css', function(){
-  return gulp.src([
+  gulp.src([
       'src/public/css/bootstrap.css',
       'src/public/css/style.css',
   ])
     .pipe(csso({ comments: false }))
     .pipe(concat('styles.min.css'))
     .pipe(gulp.dest('dist/public/css'))
+
+
+    gulp.src([
+        'src/public/css/bootstrap.css',
+        'src/public/css/contentpage-style.css',
+    ])
+        .pipe(csso({ comments: false }))
+        .pipe(concat('contentpagestyles.min.css'))
+        .pipe(gulp.dest('dist/public/css'))
+
 });
 
 gulp.task('js', function(){

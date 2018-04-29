@@ -1,0 +1,19 @@
+h4 {
+    color: #efe811
+}
+
+h2 {
+    color: #31d7cf
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    overflow-x: hidden;
+    color:#ee2f7a;
+    background-color: #0c152f
+}
+
+.logo-img {
+    max-width: 400px;
+    margin-bottom: 5px;
+}
