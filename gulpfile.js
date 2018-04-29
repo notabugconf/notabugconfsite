@@ -2,17 +2,18 @@ var gulp = require('gulp');
 var csso = require('gulp-csso');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
-const template = require('gulp-template');
+var rename = require('gulp-rename');
+var template = require('gulp-template');
+var image = require('gulp-image');
 
-const image = require('gulp-image');
-
+// Site data
 var data = require('./data/data.json');
 
 
 gulp.task('css', function(){
   return gulp.src([
-      'public/css/bootstrap.css',
-      'public/css/style.css',
+      'src/public/css/bootstrap.css',
+      'src/public/css/style.css',
   ])
     .pipe(csso({ comments: false }))
     .pipe(concat('styles.min.css'))
@@ -21,23 +22,31 @@ gulp.task('css', function(){
 
 gulp.task('js', function(){
     return gulp.src([
-        'public/js/jquery-3.2.1.js',
-        'public/js/bootstrap.js',
-        'public/js/main.js'
+        'src/public/js/jquery-3.2.1.js',
+        'src/public/js/bootstrap.js',
+        'src/public/js/main.js'
     ])
       .pipe(uglify())
       .pipe(concat('main.min.js'))
       .pipe(gulp.dest('dist/public/js'))
   });
 
-gulp.task('html', () =>
-  gulp.src('index.html')
+gulp.task('html', function () {
+  gulp.src('src/index.html')
     .pipe(template(data))
-    .pipe(gulp.dest('dist'))
-);
+    .pipe(gulp.dest('dist'));
+
+    gulp.src([
+        'src/code-of-conduct.html',
+        'src/privacy-policy.html',
+    ]).pipe(rename(function (path) {
+        path.extname = ''
+    }))
+    .pipe(gulp.dest('dist'));
+});
 
 gulp.task('images', function () {
-    gulp.src('./public/images/**/*')
+    gulp.src('src/public/images/**/*')
       .pipe(image())
       .pipe(gulp.dest('./dist/public/images'));
   });
