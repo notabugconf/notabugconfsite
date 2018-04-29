@@ -1,0 +1,13 @@
+{
+  "name": "notabugconf",
+  "version": "1.0.0",
+  "description": "Not a bug conf web site",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.0",
+    "gulp-uglify": "^3.0.0"
+  },
+  "author": "Not a bug conf",
+  "license": "DO WHAT THE FUCK YOU WANT TO"
+}
