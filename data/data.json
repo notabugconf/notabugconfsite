@@ -1,0 +1,32 @@
+{
+    "sponsors" : [
+        {
+            "image" : "lotrek.png",
+            "name" : "AAAA"
+        },
+        {
+            "image" : "lotrek.png",
+            "name" : "AAAA"
+        }
+    ],
+    "talks" : [
+        {
+            "speakerimage" : "title.png",
+            "speakername" : "AAAA",
+            "title" : "BBBB",
+            "description": "CCCC"
+        },
+        {
+            "speakerimage" : "title.png",
+            "speakername" : "AAAA1",
+            "title" : "BBBB1",
+            "description": "CCCC1"
+        },
+        {
+            "speakerimage" : "title.png",
+            "speakername" : "AAAA2",
+            "title" : "BBBB2",
+            "description": "CCCC2"
+        }
+    ]
+}
