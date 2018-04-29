@@ -10,8 +10,7 @@
 
   <link rel="apple-touch-icon" href="icon.png">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-  <link rel="stylesheet" href="https://getbootstrap.com/dist/css/bootstrap.min.css">
-  <link href="public/css/style.css" rel="stylesheet">
+  <link href="public/css/styles.min.css" rel="stylesheet">
 </head>
 
 
@@ -83,50 +82,26 @@
             </p>
           </div>
         </div>
-      </div>
+      </div>      
 
-      <!--<div id='speakers'>
+      <div id='speakers'>
+
+            <% _.forEach(talks, function(talk) { %>
                 <hr class="featurette-divider">
         
                 <div class="row featurette p-3">
                     <div class="col-md-5">
-                        <img class="rounded-circle speaker-img" src="public/images/spongebob.jpg" alt="Generic placeholder image">
+                        <img class="rounded-circle speaker-img" src="public/images/<%- talk.speakerimage %>" alt="Generic placeholder image">
                     </div>
                     <div class="col-md-7">
-                    <h2 class="featurette-heading ">Testing in Python, <span class="text-muted">Andrea Stagi</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                    <h2 class="featurette-heading "><%- talk.title %>, <span class="text-muted"><%- talk.speakername %></span></h2>
+                    <p class="lead"><%- talk.description %></p>
                     </div>
 
                 </div>
-        
-                <hr class="featurette-divider">
-        
-                <div class="row featurette">
-                        <div class="col-md-5 order-md-2">
-                            <img class="rounded-circle speaker-img" src="public/images/spongebob.jpg" alt="Generic placeholder image">
-                        </div>
-                    <div class="col-md-7 order-md-1">
-                    <h2 class="featurette-heading">Testing in Python, <span class="text-muted">Andrea Stagi</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                    </div>
-                </div>
-        
-                <hr class="featurette-divider">
-        
-                <div class="row featurette">
-                        <div class="col-md-5">
-                            <img class="rounded-circle speaker-img" src="public/images/spongebob.jpg" alt="Generic placeholder image">
-                        </div>
-                    <div class="col-md-7">
-                    <h2 class="featurette-heading">Testing in Python, <span class="text-muted">Andrea Stagi</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                    </div>
-
-                </div>
-        
-                <hr class="featurette-divider">
+            <% }); %> 
                 
-            </div>-->
+      </div>
 
       <div class="row p-3" id='where'>
         <div id="map"></div>
@@ -147,19 +122,16 @@
         </script>
       </div>
 
+
       <div class="row p-3" id='sponsors'>
         <div class="col-lg-12">
           <h2>I nostri sponsor</h2>
         </div>
-        <div class="col-lg-4">
-          <img class="sponsor-img img-fluid mx-auto" src="public/images/sponsors/lotrek.png">
-        </div>
-        <div class="col-lg-4">
-          <img class="sponsor-img img-fluid mx-auto" src="public/images/sponsors/lotrek.png">
-        </div>
-        <div class="col-lg-4">
-          <img class="sponsor-img img-fluid mx-auto" src="public/images/sponsors/lotrek.png">
-        </div>
+        <% _.forEach(sponsors, function(sponsor) { %>
+            <div class="col-lg-4">
+                <img class="sponsor-img img-fluid mx-auto" src="public/images/sponsors/<%- sponsor.image %>">
+            </div>
+        <% }); %> 
       </div>
 
       <footer class="container">
@@ -174,8 +146,7 @@
       </footer>
   </main>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
-  <script src="https://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+  <script src="public/js/main.min.js"></script>
 </body>
 
 </html>

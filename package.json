@@ -6,6 +6,8 @@
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^3.0.0",
+    "gulp-image": "^4.3.0",
+    "gulp-template": "^5.0.0",
     "gulp-uglify": "^3.0.0"
   },
   "author": "Not a bug conf",
