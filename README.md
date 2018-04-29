@@ -7,3 +7,5 @@
 ## Compile the website
 
     gulp
+
+You can find the website in the `dist/` folder. Enjoy!

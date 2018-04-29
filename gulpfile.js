@@ -14,7 +14,7 @@ gulp.task('css', function(){
       'public/css/bootstrap.css',
       'public/css/style.css',
   ])
-    .pipe(csso())
+    .pipe(csso({ comments: false }))
     .pipe(concat('styles.min.css'))
     .pipe(gulp.dest('dist/public/css'))
 });
@@ -23,6 +23,7 @@ gulp.task('js', function(){
     return gulp.src([
         'public/js/jquery-3.2.1.js',
         'public/js/bootstrap.js',
+        'public/js/main.js'
     ])
       .pipe(uglify())
       .pipe(concat('main.min.js'))

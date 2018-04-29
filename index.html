@@ -86,14 +86,14 @@
 
       <div id='speakers'>
 
-            <% _.forEach(talks, function(talk) { %>
+            <% _.forEach(talks, function(talk, index) { %>
                 <hr class="featurette-divider">
         
                 <div class="row featurette p-3">
-                    <div class="col-md-5">
+                    <div class="col-md-5 <% if (index % 2 == 0){%>order-md-2<%}%>">
                         <img class="rounded-circle speaker-img" src="public/images/<%- talk.speakerimage %>" alt="Generic placeholder image">
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-md-7 <% if (index % 2 == 0){%>order-md-1<%}%>">
                     <h2 class="featurette-heading "><%- talk.title %>, <span class="text-muted"><%- talk.speakername %></span></h2>
                     <p class="lead"><%- talk.description %></p>
                     </div>
