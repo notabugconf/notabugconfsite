@@ -35,7 +35,10 @@ gulp.task('html', function () {
   gulp.src('src/index.html')
     .pipe(template(data))
     .pipe(gulp.dest('dist'));
-
+    gulp.src([
+        'src/robots.txt',
+    ])
+    .pipe(gulp.dest('dist'));
     gulp.src([
         'src/code-of-conduct.html',
         'src/privacy-policy.html',
