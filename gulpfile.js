@@ -8,7 +8,9 @@ var image = require('gulp-image');
 
 // Site data
 var data = require('./data/data.json');
+var package = require('./package.json');
 
+data.version = package.version;
 
 gulp.task('css', function(){
   gulp.src([
@@ -52,7 +54,9 @@ gulp.task('html', function () {
     gulp.src([
         'src/code-of-conduct.html',
         'src/privacy-policy.html',
-    ]).pipe(rename(function (path) {
+    ])
+    .pipe(template(data))
+    .pipe(rename(function (path) {
         path.extname = ''
     }))
     .pipe(gulp.dest('dist'));
