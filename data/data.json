@@ -2,12 +2,12 @@
     "sponsors" : [
         {
             "image" : "lotrek.png",
-            "name" : "AAAA",
+            "name" : "Lotrèk s.c.r.l.",
             "url" : "https://lotrek.it"
         },
         {
-            "image" : "lotrek.png",
-            "name" : "AAAA",
+            "image" : "tattakki.jpg",
+            "name" : "Tattakki",
             "url" : "#"
         }
     ],
