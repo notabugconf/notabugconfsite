@@ -101,3 +101,59 @@
     animation: pointypoint 2s infinite;
   }
 }
+
+
+
+header{
+  position: relative;
+}
+
+.bug__container{
+  position: absolute;
+  z-index: 9;
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.bug__image{
+  position: relative;
+  top: 100vw;
+  width: 30%;
+  transform: rotate(-20deg);
+
+  animation-name: bugAnimation;
+  animation-duration: 10s;
+  
+}
+
+@keyframes bugAnimation {
+  0% {
+    top: 60vw;
+    transform: rotate(-20deg);
+  }
+  25% {
+    top: 40vw;
+  }
+  35% {
+    top: 20vw;
+  }
+  50% {
+    top: 15vw;
+    transform: rotate(20deg);
+
+  }
+  70% {
+    top: 15vw;
+    transform: rotate(-20deg);
+  }
+  80% {
+    top: 30vw;
+    transform: rotate(20deg);
+  }
+  90% {
+    top: 30vw;
+  }
+  100% {
+    top: 50vw;
+  }
+}
