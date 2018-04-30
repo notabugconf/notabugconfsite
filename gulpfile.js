@@ -49,7 +49,8 @@ gulp.task('html', function () {
     .pipe(gulp.dest('dist'));
     gulp.src([
         'src/robots.txt',
-        'src/.htaccess'
+        'src/.htaccess',
+        'src/sitemap.xml'
     ])
     .pipe(gulp.dest('dist'));
     gulp.src([
