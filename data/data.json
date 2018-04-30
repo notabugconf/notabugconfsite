@@ -6,6 +6,11 @@
             "url" : "https://lotrek.it"
         },
         {
+            "image" : "fagioli.jpg",
+            "name" : "Stefano Fagioli Assicurazioni",
+            "url" : "#"
+        },
+        {
             "image" : "tattakki.jpg",
             "name" : "Tattakki",
             "url" : "#"
