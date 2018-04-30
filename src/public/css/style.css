@@ -65,3 +65,9 @@
   background-color: #ee2f7a;
   border: none;
 }
+
+.map{
+  display: block;
+  min-height: 20em;
+   width: 100%;
+}

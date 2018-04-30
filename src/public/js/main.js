@@ -1,11 +1,29 @@
 var initGoogleMap = function() {
-    var uluru = { lat: -25.363, lng: 131.044 };
+  var lotrek_head_quarters = {
+    lat: 43.932839,
+    lng: 10.9324155,};
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 4,
-      center: uluru
+      center: lotrek_head_quarters,
+      mapZoomControl: false,
+      mapSetTypeControl: false,
+      mapFullScreenControl: false,
+      mapScaleControl: false,
+      mapStreetWiewControl: false,
+      mapScrollWheel: false,
+      mapDraggable: false,
+      mapDisableDoubleClickZoom: false,
+      mapCustomMarker: false,
+      mapCustomMarkerHeight: 60,
+      mapCustomMarkerWidth: 60,
+      mapPrimaryColor: false,
+      mapSecondaryColor: false,
+      mapBaseColor: false,
+      mapEnableCustomStyles: false,
+      mapMultiLocations: false,
+      zoom: 16
     });
     var marker = new google.maps.Marker({
-      position: uluru,
+      position: lotrek_head_quarters,
       map: map
     });
 }
