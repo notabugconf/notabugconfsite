@@ -27,3 +27,8 @@ var initGoogleMap = function() {
       map: map
     });
 }
+
+window.setInterval(function () {
+  $("#bug-egg").toggleClass("bug__image--animation")
+  $("#bug-egg-bottom").toggleClass("bug__image--animation--bottom")
+}, 60000);

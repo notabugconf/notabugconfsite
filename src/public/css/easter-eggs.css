@@ -1,0 +1,199 @@
+
+header{
+  position: relative;
+}
+
+.bug__container{
+  position: fixed;
+  z-index: 9;
+  right: 0px;
+  transform: rotate(180deg);
+}
+ @media (max-width: 576px) {
+   .bug__container {
+    left: 0px;
+   }
+ }
+
+
+
+.bug__image{
+  position: relative;
+  top: 100vw;
+  width: 20%;
+  transform: rotate(-20deg);
+}
+ @media (max-width: 576px) {
+   .bug__image {
+    width: 40%;
+    animation-name: bugAnimationMobile;
+   }
+ }
+
+.bug__image--animation{
+  animation-name: bugAnimationDesktop;
+  animation-duration: 10s;
+}
+
+@keyframes bugAnimationMobile {
+  0% {
+    top: 60vw;
+    transform: rotate(-20deg);
+  }
+  25% {
+    top: 40vw;
+  }
+  35% {
+    top: 20vw;
+  }
+  50% {
+    top: 15vw;
+    transform: rotate(20deg);
+  }
+  70% {
+    top: 15vw;
+    transform: rotate(-20deg);
+  }
+  80% {
+    top: 30vw;
+    transform: rotate(20deg);
+  }
+  90% {
+    top: 30vw;
+  }
+  100% {
+    top: 50vw;
+  }
+}
+
+@keyframes bugAnimationDesktop {
+  0% {
+    top: 50vw;
+    transform: rotate(-20deg);
+  }
+  25% {
+    top: 40vw;
+  }
+  35% {
+    top: 20vw;
+  }
+  50% {
+    top: 10vw;
+    transform: rotate(20deg);
+  }
+  70% {
+    top: 5vw;
+    transform: rotate(-20deg);
+  }
+  80% {
+    top: 35vw;
+    transform: rotate(20deg);
+  }
+  90% {
+    top: 40vw;
+  }
+  100% {
+    top: 45vw;
+  }
+}
+
+
+/* -------------- BOTTOM -------------- */
+.relative-container {
+    position: relative;
+}
+
+.bug__container_bottom{
+  position: fixed;
+  z-index: 9;
+  bottom: 0;
+  left: 0px;}
+
+ @media (max-width: 576px) {
+   .bug__container_bottom {
+    right: 0px;
+   }
+ }
+
+
+
+.bug__image_bottom{
+  position: relative;
+  width: 20%;
+  bottom: -100vw;
+  
+  transform: rotate(-20deg);
+}
+ @media (max-width: 576px) {
+   .bug__image_bottom {
+    width: 40%;
+    animation-name: bugAnimationMobileBottom;
+   }
+ }
+
+.bug__image--animation--bottom{
+  animation-name: bugAnimationDesktopBottom;
+  animation-duration: 10s;
+}
+
+@keyframes bugAnimationMobileBottom {
+  0% {
+    bottom: -60vw;
+    transform: rotate(-20deg);
+  }
+  25% {
+    bottom: -40vw;
+  }
+  35% {
+    bottom: -4vw;
+  }
+  50% {
+    bottom: 5vw;
+    transform: rotate(20deg);
+  }
+  70% {
+    bottom: -15vw;
+    transform: rotate(-20deg);
+  }
+  80% {
+    bottom: -30vw;
+    transform: rotate(20deg);
+  }
+  90% {
+    bottom: -30vw;
+  }
+  100% {
+    bottom: -50vw;
+  }
+}
+
+@keyframes bugAnimationDesktopBottom {
+  0% {
+    bottom: -50vw;
+    transform: rotate(-20deg);
+  }
+  25% {
+    bottom: -40vw;
+  }
+  35% {
+    bottom: -20vw;
+  }
+  50% {
+    bottom: -10vw;
+    transform: rotate(20deg);
+  }
+  70% {
+    bottom: -5vw;
+    transform: rotate(-20deg);
+  }
+  80% {
+    bottom: -35vw;
+    transform: rotate(20deg);
+  }
+  90% {
+    bottom: -40vw;
+  }
+  100% {
+    bottom: -45vw;
+  }
+}

@@ -15,6 +15,7 @@ data.version = package.version;
 gulp.task('css', function(){
   gulp.src([
       'src/public/css/bootstrap.css',
+      'src/public/css/easter-eggs.css',
       'src/public/css/style.css',
   ])
     .pipe(csso({ comments: false }))

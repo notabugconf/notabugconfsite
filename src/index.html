@@ -15,9 +15,11 @@
 
 <header>
   <figure class="bug__container">
-    <img class="bug__image" src="public/images/buconf.png" alt="">
+    <img id="bug-egg" class="bug__image bug__image--animation" src="public/images/buconf.png" alt="">
   </figure>
+
 </header>
+
 <body class="text-center" style="font-family: 'Roboto Mono', monospace; overflow-x: hidden;">
   <nav class="navbar navbar-expand-lg navbar-light  bg-yellow">
     <a class="navbar-brand" href="#" style="color: black;">#notabugconf</a>
@@ -50,10 +52,10 @@
             <div class="col-lg-6 p-3 ">
               <h2 class="featurette-heading">Via Luigi Galvani 15, Pistoia</h2>
               <h2 class="featurette-heading">16 Giugno 2018 &middot; h. 15.30</h2>
-  
-                <a href="https://notabugconf.eventbrite.it" target="_blank" rel="nofollow" class="btn btn-primary action-button m-3"> 🎫 Registrati 🎫 </a>
-    
-  
+
+              <a href="https://notabugconf.eventbrite.it" target="_blank" rel="nofollow" class="btn btn-primary action-button m-3"> 🎫 Registrati 🎫 </a>
+
+
               <p>
                 Inviaci il tuo talk entro e non oltre il 3 Giugno 2018, con una breve descrizione di quello che andrai a trattare
               </p>
@@ -61,39 +63,43 @@
             </div>
           </div>
         </div>
-        
+
       </div>
 
       <div class="container py-5">
         <div class="row p-1">
           <div class="col-lg-8">
             <h2 style="text-align:left">Chi siamo</h2>
-            <p style="text-align:left">NotABugConf è la conferenza toscana che raccoglie professionisti, ricercatori e appassionati della programmazione e non solo. Nella cornice di Pistoia, NotABugConf è un giorno per imparare, confrontarsi e scoprire.</p>
+            <p style="text-align:left">NotABugConf è la conferenza toscana che raccoglie professionisti, ricercatori e appassionati della programmazione
+              e non solo. Nella cornice di Pistoia, NotABugConf è un giorno per imparare, confrontarsi e scoprire.</p>
           </div>
-  
+
           <div class="col-lg-4">
             <img class="img-fluid mx-auto badges-img" src="public/images/mini_badge_info.jpg" alt="OurBadges">
-  
+
           </div>
         </div>
       </div>
-      
+
       <div id="cfp" class="container py-5">
         <div class="row featurette p-3">
           <div class="col-md-12">
             <h1>
               <span class="bg-pink" style="padding: 5px">We want you!</span>
             </h1>
-            <p class="py-4">Per partecipare come speaker a questo evento, inviaci la tua proposta di talk, seguendo il bottone qui sotto. Hai tempo fino al 3 Giugno 2018 per inviarci la tua proposta. Il talk deve trattare un argomento relativo all'area IT e non deve superare i 30 minuti di durata.
-              <br><br>
+            <p class="py-4">Per partecipare come speaker a questo evento, inviaci la tua proposta di talk, seguendo il bottone qui sotto.
+              Hai tempo fino al 3 Giugno 2018 per inviarci la tua proposta. Il talk deve trattare un argomento relativo all'area
+              IT e non deve superare i 30 minuti di durata.
+              <br>
+              <br>
               <i>Sarai ricontattato via mail con tutte le informazioni riservate agli speaker 💪🏻</i>
             </p>
             <button type="button" class="btn btn-primary bg-cyan" style="border: none" onclick="location.href='mailto:cfp@notabugconf.it;'">👏 Invia il tuo talk</button>
           </div>
         </div>
-      </div>      
+      </div>
 
-     <!-- <div id='speakers'>
+      <!-- <div id='speakers'>
 
             <% _.forEach(talks, function(talk, index) { %>
                 <hr class="featurette-divider">
@@ -109,55 +115,62 @@
 
                 </div>
             <% }); %> -->
-                
-      </div>
 
-      <div class="row p-3 py-5" id='where'>
-        <div id="map" class="map"></div>
-      </div>
+    </div>
+
+    <div class="row p-3 py-5" id='where'>
+      <div id="map" class="map"></div>
+    </div>
 
 
-      <div class="container py-5">
-        <div class="row p-3 justify-content-center" id='sponsors'>
-          <div class="col-lg-12">
-            <h2>I nostri supporter</h2>
-          </div>
-          <% _.forEach(sponsors, function(sponsor) { %>
-              <div class="col-lg-4">
-                  <a href="<%- sponsor.url %>" target="_blank" rel="nofollow">
-                    <img class="sponsor-img img-fluid mx-auto grayscale" 
-                         src="public/images/sponsors/<%- sponsor.image %>">
-                  </a>
-              </div>
-          <% }); %> 
+    <div class="container py-5">
+      <div class="row p-3 justify-content-center" id='sponsors'>
+        <div class="col-lg-12">
+          <h2>I nostri supporter</h2>
         </div>
+        <% _.forEach(sponsors, function(sponsor) { %>
+          <div class="col-lg-4">
+            <a href="<%- sponsor.url %>" target="_blank" rel="nofollow">
+              <img class="sponsor-img img-fluid mx-auto grayscale" src="public/images/sponsors/<%- sponsor.image %>">
+            </a>
+          </div>
+          <% }); %>
       </div>
-      
+    </div>
 
-      <footer class="container">
-        <hr>
-        <p>
-          <a href="privacy-policy">Privacy Policy</a> &middot;
-          <a href="code-of-conduct">Code Of Conduct</a> &middot;
-          <a href="mailto:info@notabugconf.it">Contattaci</a>
-        </p>
-        <p>
-          <a href="https://www.facebook.com/notabugconf/" target="_blank" rel="nofollow">Facebook</a> &middot;
-          <a href="https://twitter.com/notabugconf" target="_blank" rel="nofollow">Twitter</a> &middot;
-          <a href="https://notabugconf.eventbrite.it" target="_blank" rel="nofollow">Eventbrite</a> &middot;
-          <a href="https://t.me/joinchat/AhrWXBFT_jUUFqAqkg6AzA" target="_blank" rel="nofollow">Telegram Group</a>
-           
-        </p>
-        <p>&copy; 2018 Not A Bug Conf 🐛</p>
-        <p>
-          <a href="#">Back to top</a>
-        </p>
-      </footer>
+
+    <footer class="container">
+      <hr>
+      <p>
+        <a href="privacy-policy">Privacy Policy</a> &middot;
+        <a href="code-of-conduct">Code Of Conduct</a> &middot;
+        <a href="mailto:info@notabugconf.it">Contattaci</a>
+      </p>
+      <p>
+        <a href="https://www.facebook.com/notabugconf/" target="_blank" rel="nofollow">Facebook</a> &middot;
+        <a href="https://twitter.com/notabugconf" target="_blank" rel="nofollow">Twitter</a> &middot;
+        <a href="https://notabugconf.eventbrite.it" target="_blank" rel="nofollow">Eventbrite</a> &middot;
+        <a href="https://t.me/joinchat/AhrWXBFT_jUUFqAqkg6AzA" target="_blank" rel="nofollow">Telegram Group</a>
+
+      </p>
+      <p>&copy; 2018 Not A Bug Conf 🐛</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+
+
+    </footer>
+    <div class="relative-container">
+      <figure class="bug__container_bottom">
+        <img id="bug-egg-bottom" class="bug__image_bottom" src="public/images/buconf.png" alt="">
+      </figure>
+      </div>
   </main>
   <script src="public/js/main.min.js?v=<%- version %>"></script>
 
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA38H_bb3Xm5MVHF4lXEn_Wi4y7Vx43oo&callback=initGoogleMap">
   </script>
+
 </body>
 
 </html>
