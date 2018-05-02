@@ -14,6 +14,11 @@
             "image" : "tattakki.jpg",
             "name" : "Tattakki",
             "url" : "https://www.etsy.com/it/shop/Tattakki"
+        },
+        {
+            "image" : "pypizza.png",
+            "name" : "Python Pizza",
+            "url" : "https://python.pizza/"
         }
     ],
     "talks" : [
