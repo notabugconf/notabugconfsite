@@ -59,7 +59,7 @@
         <div class="container-fluid">
           <div class="row inner align-items-center">
             <div class="col-lg-6 p-3">
-              <img class="img-fluid mx-auto" src='public/images/title.png'>
+              <img class="img-fluid mx-auto" src='public/images/title.png' alt="Not a bug conf logo">
             </div>
             <div class="col-lg-6 p-3 ">
               <h2 class="featurette-heading">Via Luigi Galvani 15, Pistoia</h2>
@@ -86,7 +86,7 @@
           </div>
   
           <div class="col-lg-4">
-            <img class="img-fluid mx-auto badges-img" src="public/images/mini_badge_info.jpg" alt="OurBadges">
+            <img class="img-fluid mx-auto badges-img" src="public/images/mini_badge_info.jpg" alt="I nostri badge">
   
           </div>
         </div>
@@ -140,7 +140,8 @@
               <div class="col-lg-4">
                   <a href="<%- sponsor.url %>" target="_blank" rel="nofollow">
                     <img class="sponsor-img img-fluid mx-auto grayscale" 
-                         src="public/images/sponsors/<%- sponsor.image %>">
+                         src="public/images/sponsors/<%- sponsor.image %>"
+                         alt="<%- sponsor.name %>">
                   </a>
               </div>
           <% }); %> 
