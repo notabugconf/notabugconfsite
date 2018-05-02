@@ -107,7 +107,9 @@ header{
   position: fixed;
   z-index: 9;
   bottom: 0;
-  left: 0px;}
+  left: 0px;
+  pointer-events:none;
+}
 
  @media (max-width: 576px) {
    .bug__container_bottom {
