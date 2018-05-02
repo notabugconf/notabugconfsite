@@ -50,9 +50,12 @@ gulp.task('html', function () {
     .pipe(gulp.dest('dist'));
     gulp.src([
         'src/robots.txt',
+        'src/.htaccess',
+        'src/sitemap.xml'
     ])
     .pipe(gulp.dest('dist'));
     gulp.src([
+        'src/404.html',
         'src/code-of-conduct.html',
         'src/privacy-policy.html',
     ])

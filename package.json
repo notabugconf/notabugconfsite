@@ -1,6 +1,6 @@
 {
   "name": "notabugconf",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "Not a bug conf web site",
   "devDependencies": {
     "gulp": "^3.9.1",
