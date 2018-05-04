@@ -45,25 +45,28 @@
   <link href="public/css/styles.min.css?v=<%- version %>" rel="stylesheet">
 </head>
 
-
 <body class="text-center" style="font-family: 'Roboto Mono', monospace; overflow-x: hidden;">
-  <nav class="navbar navbar-expand-lg navbar-light  bg-yellow">
-    <a class="navbar-brand" href="#" style="color: black;">#notabugconf</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <!-- <a class="nav-item nav-link pinklink" href="#speakers">Speakers</a> -->
-        <a class="nav-item nav-link pinklink" href="https://notabugconf.eventbrite.it" target="_blank" rel="nofollow">Registrati</a>
-
-        <a class="nav-item nav-link pinklink" href="#cfp">Call For Papers</a>
-        <a class="nav-item nav-link pinklink" href="#where">Where</a>
-        <a class="nav-item nav-link pinklink" href="#sponsors">Supporter</a>
+  <header>
+    <figure class="bug__container">
+      <img id="bug-egg" class="bug__image bug__image--animation" src="public/images/buconf.png" alt="">
+    </figure>
+    <nav class="navbar navbar-expand-lg navbar-light  bg-yellow" style="z-index: 99;">
+      <a class="navbar-brand" href="#" style="color: black;">#notabugconf</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <!-- <a class="nav-item nav-link pinklink" href="#speakers">Speakers</a> -->
+          <a class="nav-item nav-link pinklink" href="https://notabugconf.eventbrite.it" target="_blank" rel="nofollow">Registrati</a>
+          <a class="nav-item nav-link pinklink" href="#cfp">Call For Papers</a>
+          <a class="nav-item nav-link pinklink" href="#where">Where</a>
+          <a class="nav-item nav-link pinklink" href="#sponsors">Supporter</a>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
   <main role="main">
 
     <div class="">
@@ -92,7 +95,7 @@
             </div>
           </div>
         </div>
-        
+
       </div>
 
       <div class="container py-5">
@@ -101,31 +104,34 @@
             <h2 style="text-align:left">Chi siamo</h2>
             <p style="text-align:left">NotABugConf è la conferenza toscana che raccoglie professionisti, ricercatori e appassionati della programmazione e non solo. Nella cornice di Pistoia, NotABugConf è un giorno per imparare, confrontarsi e scoprire. L'aperitivo intorno alle 19.30 lo offriamo noi 🍹</p>
           </div>
-  
+
           <div class="col-lg-4">
             <img class="img-fluid mx-auto badges-img" src="public/images/mini_badge_info.jpg" alt="I nostri badge">
   
           </div>
         </div>
       </div>
-      
+
       <div id="cfp" class="container py-5">
         <div class="row featurette p-3">
           <div class="col-md-12">
             <h1>
               <span class="bg-pink" style="padding: 5px">We want you!</span>
             </h1>
-            <p class="py-4">Per partecipare come speaker a questo evento, inviaci la tua proposta di talk, seguendo il bottone qui sotto. Hai tempo fino al 3 Giugno 2018 per inviarci la tua proposta. Il talk deve trattare un argomento relativo all'area IT e non deve superare i 30 minuti di durata.
-              <br><br>
+            <p class="py-4">Per partecipare come speaker a questo evento, inviaci la tua proposta di talk, seguendo il bottone qui sotto.
+              Hai tempo fino al 3 Giugno 2018 per inviarci la tua proposta. Il talk deve trattare un argomento relativo all'area
+              IT e non deve superare i 30 minuti di durata.
+              <br>
+              <br>
               <i>Sarai ricontattato via mail con tutte le informazioni riservate agli speaker 💪🏻</i>
             </p>
             <button type="button" class="btn btn-primary bg-cyan" style="border: none" onclick="location.href='mailto:cfp@notabugconf.it;'">👏 Invia il tuo talk</button>
             <p>cfp(at)notabugconf.it</p>
           </div>
         </div>
-      </div>      
+      </div>
 
-     <!-- <div id='speakers'>
+      <!-- <div id='speakers'>
 
             <% _.forEach(talks, function(talk, index) { %>
                 <hr class="featurette-divider">
@@ -141,8 +147,8 @@
 
                 </div>
             <% }); %> -->
-                
-      </div>
+
+          </div>
 
       <div class="py-5" id='where'>
         <div id="map" class="map"></div>
@@ -158,39 +164,49 @@
               <div class="col-lg-3">
                   <a href="<%- sponsor.url %>" target="_blank" rel="nofollow">
                     <img class="sponsor-img img-fluid mx-auto grayscale" 
-                         src="public/images/sponsors/<%- sponsor.image %>"
-                         alt="<%- sponsor.name %>">
+                          src="public/images/sponsors/<%- sponsor.image %>"
+                          alt="<%- sponsor.name %>">
                   </a>
               </div>
           <% }); %> 
         </div>
       </div>
-      
 
-      <footer class="container">
-        <hr>
-        <p>
-          <a href="privacy-policy">Privacy Policy</a> &middot;
-          <a href="code-of-conduct">Code Of Conduct</a> &middot;
-          <a href="mailto:info@notabugconf.it">Contattaci</a>
-        </p>
-        <p>
-          <a href="https://www.facebook.com/notabugconf/" target="_blank" rel="nofollow">Facebook</a> &middot;
-          <a href="https://twitter.com/notabugconf" target="_blank" rel="nofollow">Twitter</a> &middot;
-          <a href="https://notabugconf.eventbrite.it" target="_blank" rel="nofollow">Eventbrite</a> &middot;
-          <a href="https://t.me/joinchat/AhrWXBFT_jUUFqAqkg6AzA" target="_blank" rel="nofollow">Telegram Group</a>
-           
-        </p>
-        <p>&copy; 2018 Not A Bug Conf 🐛</p>
-        <p>
-          <a href="#">Back to top</a>
-        </p>
-      </footer>
+
+    <footer class="container">
+      <hr>
+      <p>
+        <a href="privacy-policy">Privacy Policy</a> &middot;
+        <a href="code-of-conduct">Code Of Conduct</a> &middot;
+        <a href="mailto:info@notabugconf.it">Contattaci</a>
+      </p>
+      <p>
+        <a href="https://www.facebook.com/notabugconf/" target="_blank" rel="nofollow">Facebook</a> &middot;
+        <a href="https://twitter.com/notabugconf" target="_blank" rel="nofollow">Twitter</a> &middot;
+        <a href="https://notabugconf.eventbrite.it" target="_blank" rel="nofollow">Eventbrite</a> &middot;
+        <a href="https://t.me/joinchat/AhrWXBFT_jUUFqAqkg6AzA" target="_blank" rel="nofollow">Telegram Group</a>
+
+      </p>
+      <p>&copy; 2018 Not A Bug Conf 🐛</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+
+
+    </footer>
+    <div class="relative-container">
+      <figure class="bug__container_bottom">
+        <img id="bug-egg-bottom" class="bug__image_bottom" src="public/images/buconf.png" alt="">
+      </figure>
+    </div>
   </main>
   <script src="public/js/main.min.js?v=<%- version %>"></script>
 
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA38H_bb3Xm5MVHF4lXEn_Wi4y7Vx43oo&callback=initGoogleMap">
+
+
   </script>
+
 </body>
 
 </html>
