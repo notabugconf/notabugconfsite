@@ -143,34 +143,34 @@
                     <div class="col-md-7 <% if (index % 2 == 0){%>order-md-1<%}%>">
                     <h2 class="featurette-heading "><%- talk.title %>, <span class="text-muted"><%- talk.speakername %></span></h2>
                     <p class="lead"><%- talk.description %></p>
-                    </div>
-
                 </div>
+
+            </div>
             <% }); %> -->
 
-          </div>
+    </div>
 
-      <div class="py-5" id='where'>
-        <div id="map" class="map"></div>
-      </div>
+    <div class="py-5" id='where'>
+      <div id="map" class="map"></div>
+    </div>
 
 
-      <div class="container py-5">
-        <div class="row p-3 justify-content-center" id='sponsors'>
-          <div class="col-lg-12">
-            <h2>I nostri supporter</h2>
-          </div>
-          <% _.forEach(sponsors, function(sponsor) { %>
-              <div class="col-lg-3">
-                  <a href="<%- sponsor.url %>" target="_blank" rel="nofollow">
-                    <img class="sponsor-img img-fluid mx-auto grayscale" 
-                          src="public/images/sponsors/<%- sponsor.image %>"
-                          alt="<%- sponsor.name %>">
-                  </a>
-              </div>
-          <% }); %> 
+    <div class="container py-5">
+      <div class="row p-3 justify-content-center" id='sponsors'>
+        <div class="col-lg-12">
+          <h2>I nostri supporter</h2>
         </div>
+        <% _.forEach(sponsors, function(sponsor) { %>
+            <div class="col-lg-4">
+                <a href="<%- sponsor.url %>" target="_blank" rel="nofollow">
+                  <img class="sponsor-img img-fluid mx-auto grayscale" 
+                        src="public/images/sponsors/<%- sponsor.image %>"
+                        alt="<%- sponsor.name %>">
+                </a>
+            </div>
+        <% }); %> 
       </div>
+    </div>
 
 
     <footer class="container">
@@ -191,7 +191,6 @@
       <p>
         <a href="#">Back to top</a>
       </p>
-
 
     </footer>
     <div class="relative-container">
