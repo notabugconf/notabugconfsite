@@ -12,5 +12,9 @@
     "gulp-uglify": "^3.0.0"
   },
   "author": "Not a bug conf",
-  "license": "DO WHAT THE FUCK YOU WANT TO"
+  "license": "DO WHAT THE FUCK YOU WANT TO",
+  "dependencies": {
+    "gulp-csslint": "^1.0.1",
+    "gulp-eslint": "^4.0.2"
+  }
 }

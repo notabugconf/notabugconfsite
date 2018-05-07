@@ -5,13 +5,13 @@ header{
 
 .bug__container{
   position: fixed;
-  z-index: 9;
-  right: 0px;
+  right: 0;
   transform: rotate(180deg);
+  z-index: 9;
 }
  @media (max-width: 576px) {
    .bug__container {
-    left: 0px;
+    left: 0;
    }
  }
 
@@ -20,19 +20,20 @@ header{
 .bug__image{
   position: relative;
   top: 100vw;
-  width: 20%;
   transform: rotate(-20deg);
+  width: 20%;
 }
- @media (max-width: 576px) {
-   .bug__image {
-    width: 40%;
+ 
+@media (max-width: 576px) {
+  .bug__image {
     animation-name: bugAnimationMobile;
-   }
- }
+    width: 40%;
+  }
+}
 
 .bug__image--animation{
-  animation-name: bugAnimationDesktop;
   animation-duration: 10s;
+  animation-name: bugAnimationDesktop;
 }
 
 @keyframes bugAnimationMobile {
@@ -104,38 +105,38 @@ header{
 }
 
 .bug__container_bottom{
+  bottom: 0;
+  left: 0;
+  pointer-events:none;
   position: fixed;
   z-index: 9;
-  bottom: 0;
-  left: 0px;
-  pointer-events:none;
 }
 
  @media (max-width: 576px) {
    .bug__container_bottom {
-    right: 0px;
+    right: 0;
    }
  }
 
 
 
-.bug__image_bottom{
-  position: relative;
-  width: 20%;
+.bug__image_bottom {
   bottom: -100vw;
-  
+  position: relative;
   transform: rotate(-20deg);
+  width: 20%;
 }
- @media (max-width: 576px) {
-   .bug__image_bottom {
-    width: 40%;
+ 
+@media (max-width: 576px) {
+  .bug__image_bottom {
     animation-name: bugAnimationMobileBottom;
-   }
- }
+    width: 40%;
+  }
+}
 
 .bug__image--animation--bottom{
-  animation-name: bugAnimationDesktopBottom;
   animation-duration: 10s;
+  animation-name: bugAnimationDesktopBottom;
 }
 
 @keyframes bugAnimationMobileBottom {

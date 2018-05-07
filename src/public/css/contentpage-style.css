@@ -1,23 +1,23 @@
 h4 {
-    color: #efe811
+  color: #efe811
 }
 
 h2 {
-    color: #31d7cf
+  color: #31d7cf
 }
 
 body {
-    font-family: 'Roboto Mono', monospace;
-    overflow-x: hidden;
-    color:#ee2f7a;
-    background-color: #0c152f
+  background-color: #0c152f;
+  color:#ee2f7a;
+  font-family: 'Roboto Mono', monospace;
+  overflow-x: hidden;
 }
 
 .logo-img {
-    max-width: 400px;
-    margin-bottom: 5px;
+  margin-bottom: 5px;
+  max-width: 400px;
 }
 
- @media only screen and (min-width: 600px) {
-.pad15 { padding: 0 15%;}
- }
+@media only screen and (min-width: 600px) {
+  .pad15 { padding: 0 15%;}
+}

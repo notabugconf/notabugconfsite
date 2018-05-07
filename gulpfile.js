@@ -5,6 +5,8 @@ var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var template = require('gulp-template');
 var image = require('gulp-image');
+var eslint = require('gulp-eslint');
+var csslint = require('gulp-csslint');
 
 // Site data
 var data = require('./data/data.json');
@@ -72,4 +74,28 @@ gulp.task('images', function () {
       .pipe(gulp.dest('./dist/public/images'));
   });
 
+htmlLint = require('gulp-html-lint');
+
+gulp.task('html-lint', function() {
+  return gulp.src('src/**/*.html')
+      .pipe(htmlLint())
+      .pipe(htmlLint.format())
+      .pipe(htmlLint.failOnError());
+});
+ 
+gulp.task('js-lint', () => {
+    return gulp.src(['src/**/*.js','!node_modules/**'])
+        .pipe(eslint())
+        .pipe(eslint.format())
+        .pipe(eslint.failAfterError());
+});
+ 
+gulp.task('css-lint', function() {
+  gulp.src(['src/**/*.css', '!src/public/css/bootstrap.css'])
+    .pipe(csslint())
+    .pipe(csslint.formatter());
+});
+ 
+
 gulp.task('default', [ 'html', 'css', 'js', 'images' ]);
+gulp.task('test', [ 'js-lint', 'css-lint' ]);
