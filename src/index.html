@@ -102,7 +102,7 @@
         <div class="row p-1">
           <div class="col-lg-8">
             <h2 style="text-align:left">Chi siamo</h2>
-            <p style="text-align:left">NotABugConf è la conferenza toscana che raccoglie professionisti, ricercatori e appassionati della programmazione e non solo. Nella cornice di Pistoia, NotABugConf è un giorno per imparare, confrontarsi e scoprire. L'aperitivo intorno alle 19.30 lo offriamo noi 🍹</p>
+            <p style="text-align:left">NotABugConf è la conferenza toscana che raccoglie professionisti, ricercatori e appassionati della programmazione e non solo. Nella cornice di Pistoia, NotABugConf è un giorno per imparare, confrontarsi e scoprire.<br/><br/><b>L'aperitivo intorno alle 19.30 lo offriamo noi 🍹</b></p>
           </div>
 
           <div class="col-lg-4">
@@ -143,34 +143,34 @@
                     <div class="col-md-7 <% if (index % 2 == 0){%>order-md-1<%}%>">
                     <h2 class="featurette-heading "><%- talk.title %>, <span class="text-muted"><%- talk.speakername %></span></h2>
                     <p class="lead"><%- talk.description %></p>
-                    </div>
-
                 </div>
+
+            </div>
             <% }); %> -->
 
-          </div>
+    </div>
 
-      <div class="py-5" id='where'>
-        <div id="map" class="map"></div>
-      </div>
+    <div class="py-5" id='where'>
+      <div id="map" class="map"></div>
+    </div>
 
 
-      <div class="container py-5">
-        <div class="row p-3 justify-content-center" id='sponsors'>
-          <div class="col-lg-12">
-            <h2>I nostri supporter</h2>
-          </div>
-          <% _.forEach(sponsors, function(sponsor) { %>
-              <div class="col-lg-3">
-                  <a href="<%- sponsor.url %>" target="_blank" rel="nofollow">
-                    <img class="sponsor-img img-fluid mx-auto grayscale" 
-                          src="public/images/sponsors/<%- sponsor.image %>"
-                          alt="<%- sponsor.name %>">
-                  </a>
-              </div>
-          <% }); %> 
+    <div class="container py-5">
+      <div class="row p-3 justify-content-center" id='sponsors'>
+        <div class="col-lg-12">
+          <h2>I nostri supporter</h2>
         </div>
+        <% _.forEach(sponsors, function(sponsor) { %>
+            <div class="col-lg-4">
+                <a href="<%- sponsor.url %>" target="_blank" rel="nofollow">
+                  <img class="sponsor-img img-fluid mx-auto grayscale" 
+                        src="public/images/sponsors/<%- sponsor.image %>"
+                        alt="<%- sponsor.name %>">
+                </a>
+            </div>
+        <% }); %> 
       </div>
+    </div>
 
 
     <footer class="container">
@@ -184,14 +184,13 @@
         <a href="https://www.facebook.com/notabugconf/" target="_blank" rel="nofollow">Facebook</a> &middot;
         <a href="https://twitter.com/notabugconf" target="_blank" rel="nofollow">Twitter</a> &middot;
         <a href="https://notabugconf.eventbrite.it" target="_blank" rel="nofollow">Eventbrite</a> &middot;
-        <a href="https://t.me/joinchat/AhrWXBFT_jUUFqAqkg6AzA" target="_blank" rel="nofollow">Telegram Group</a>
-
+        <a href="https://t.me/joinchat/AhrWXBFT_jUUFqAqkg6AzA" target="_blank" rel="nofollow">Telegram Group</a> &middot;
+        <a href="https://github.com/notabugconf" target="_blank" rel="nofollow">Github</a>
       </p>
       <p>&copy; 2018 Not A Bug Conf 🐛</p>
       <p>
         <a href="#">Back to top</a>
       </p>
-
 
     </footer>
     <div class="relative-container">
