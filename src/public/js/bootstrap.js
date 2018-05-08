@@ -15,13 +15,13 @@
       if(!isShown) {
         targetEl.classList.remove(CLASS_COLLAPSE);
         targetEl.classList.add(CLASS_COLLAPSING);
-        targetEl.style.height = 0
+        targetEl.style.height = 0;
         targetEl.classList.remove(CLASS_COLLAPSED);
         setTimeout(function() {
           targetEl.classList.remove(CLASS_COLLAPSING);
           targetEl.classList.add(CLASS_COLLAPSE, CLASS_SHOW);
           targetEl.style.height = '';
-        }, ANIMATION_TIME)
+        }, ANIMATION_TIME);
         targetEl.style.height = targetEl.scrollHeight + 'px';
       } else {
         targetEl.style.height = targetEl.getBoundingClientRect().height + 'px';
@@ -32,13 +32,13 @@
         setTimeout(function(){
           targetEl.classList.remove(CLASS_COLLAPSING);
           targetEl.classList.add(CLASS_COLLAPSE);
-        }, ANIMATION_TIME)
+        }, ANIMATION_TIME);
       }
     }
   };
 
   collapseElements.forEach(function(el) {
-    el.addEventListener('click', handleCollapseElementClick)
+    el.addEventListener('click', handleCollapseElementClick);
   });
 
 })();
