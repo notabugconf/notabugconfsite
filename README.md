@@ -14,4 +14,6 @@
 
 You can find the website in the `dist/` folder. Enjoy!
 
+### License
+
 WTFPL (C) 2018 Not a Bug Conf <hello@notabugconf.it>
