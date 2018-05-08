@@ -42,8 +42,11 @@
   color: white
 }
 
-.pinklink {
-  color: #ee2f7a!important;
+a.nav-item.nav-link.pinklink:link,
+a.nav-item.nav-link.pinklink:visited,
+a.nav-item.nav-link.pinklink:hover,
+a.nav-item.nav-link.pinklink:active {
+  color: #ee2f7a;
 }
 
 .sponsor-img {
