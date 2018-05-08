@@ -37,7 +37,6 @@ gulp.task('css', function(){
 
 gulp.task('js', function(){
     return gulp.src([
-        'src/public/js/jquery-3.2.1.js',
         'src/public/js/bootstrap.js',
         'src/public/js/main.js'
     ])
