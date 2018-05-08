@@ -86,5 +86,11 @@ gulp.task('css-lint', function() {
     .pipe(csslint.formatter());
 });
 
-gulp.task('default', [ 'html', 'css', 'js', 'images' ]);
+gulp.task('default', function(){
+  gulp.watch('src/**/*.js', ['js-lint', 'js']); 
+  gulp.watch('src/**/*.css', ['css-lint', 'css']); 
+  gulp.watch('src/**/*.html', ['html']); 
+});
+
+gulp.task('build', [ 'html', 'css', 'js', 'images' ]);
 gulp.task('test', [ 'js-lint', 'css-lint' ]);
