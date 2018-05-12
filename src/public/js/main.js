@@ -301,7 +301,25 @@ var initGoogleMap = function() {
     });
 };
 
-// window.setInterval(function () {
-//   $("#bug-egg").toggleClass("bug__image--animation");
-//   $("#bug-egg-bottom").toggleClass("bug__image--animation--bottom");
-// }, 60000);
+
+function toggleClass(el, classname){
+  if (el.classList) {
+    el.classList.toggle(className);
+  } else {
+    var classes = el.className.split(' ');
+    var existingIndex = classes.indexOf(className);
+
+    if (existingIndex >= 0)
+      classes.splice(existingIndex, 1);
+    else
+      classes.push(className);
+
+    el.className = classes.join(' ');
+  }
+}
+
+
+window.setInterval(function () {
+  toggleClass(document.getElementById('bug-egg'),"bug__image--animation");
+  toggleClass(document.getElementById('bug-egg-bottom'),"bug__image--animation--bottom");
+}, 60000);
