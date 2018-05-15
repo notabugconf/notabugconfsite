@@ -45,6 +45,13 @@ gulp.task('js', function(){
       .pipe(gulp.dest('dist/public/js'))
   });
 
+  gulp.task('fonts', function(){
+    return gulp.src([
+        'src/public/fonts/*',
+    ])
+      .pipe(gulp.dest('dist/public/fonts/'))
+  });
+
 gulp.task('html', function () {
   gulp.src('src/index.html')
     .pipe(template(data))
@@ -88,9 +95,9 @@ gulp.task('css-lint', function() {
 
 gulp.task('default', function(){
   gulp.watch('src/**/*.js', ['js-lint', 'js']); 
-  gulp.watch('src/**/*.css', ['css-lint', 'css']); 
+  gulp.watch('src/**/*.css', ['css-lint','css']); 
   gulp.watch('src/**/*.html', ['html']); 
 });
 
-gulp.task('build', [ 'html', 'css', 'js', 'images' ]);
+gulp.task('build', ['fonts', 'html', 'css', 'js', 'images' ]);
 gulp.task('test', [ 'js-lint', 'css-lint' ]);
