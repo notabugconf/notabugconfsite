@@ -1,14 +1,15 @@
 @font-face {
   font-family: 'robotoMono';
-  src:  url('../fonts/robotoMono.ttf');
-  font-weight: normal;
   font-style: normal;
+  font-weight: normal;
+  src:  url('../fonts/robotoMono.ttf');
+
 }
 
 /* Remove overscroll in chrome, firefox */
 body {
-  overscroll-behavior-y: none;
   font-family: robotoMono, monospace;
+  overscroll-behavior-y: none;
 }
 
 .title-container {
@@ -37,17 +38,17 @@ body {
 .speaker-img {
   max-width: 200px;
 }
- 
+
 .bg-yellow {
   background-color: #efe811;
   color: white
-  
+
 }
 
 .bg-pink {
   background-color: #ee2f7a;
   color: white
-  
+
 }
 
 .bg-cyan {
@@ -70,12 +71,12 @@ a.nav-item.nav-link.pinklink:active {
 .badges-img {
   border-bottom: 5px solid darkred;
 }
- 
+
 .grayscale:hover {
   -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
   filter: grayscale(0%);
 }
- 
+
 .grayscale {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
@@ -144,9 +145,9 @@ a.nav-item.nav-link.pinklink:active {
   transform: rotate(-20deg);
   width: 20%;
 }
- 
+
 @media (max-width: 576px) {
-  .bug__image {  
+  .bug__image {
     animation-name: bugAnimationMobile;
     width: 40%;
   }
