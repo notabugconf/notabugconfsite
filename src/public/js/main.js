@@ -320,6 +320,6 @@ function toggleClass(el, className){
 
 
 window.setInterval(function () {
-  toggleClass(document.getElementById('bug-egg', "bug__image--animation"));
-  toggleClass(document.getElementById('bug-egg-bottom' ,"bug__image--animation--bottom"));
-}, 60000);
+  toggleClass(document.getElementById('bug-egg'), "bug__image--animation");
+  toggleClass(document.getElementById('bug-egg-bottom'), "bug__image--animation--bottom");
+}, 42000);
