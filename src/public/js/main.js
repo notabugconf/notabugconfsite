@@ -302,7 +302,7 @@ var initGoogleMap = function() {
 };
 
 
-function toggleClass(el, classname){
+function toggleClass(el, className){
   if (el.classList) {
     el.classList.toggle(className);
   } else {
