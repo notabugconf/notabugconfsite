@@ -25,7 +25,7 @@ var keyupping = false;
 var keyuptext = "";
 var bugfallcheck = false;
 var clearkeyup = null;
-var no = 100;
+var no = 150;
 var hidebugtime = 0;
 var bugdistance = 'pageheight';
 var ie4up = (document.all) ? 1 : 0;
@@ -55,7 +55,8 @@ sty = new Array();
 function createBug() {
     var div = document.createElement('div');
     div.id = 'dot' + i + '';
-    div.innerHTML = "<span style=\"font - size: 18px; color: #ff0000\">BUG IMAGE</span>";
+    div.innerHTML = " <img style=\" width:40px !important;\" src=\"../src/public/images/buconf_mini_rotated.png\" >";
+
     div.style.top = '0px';
     div.style.left = '15px';
     div.style.position = 'absolute';
@@ -88,6 +89,7 @@ function moveBugs() {
             sty[i] = 0.7 + Math.random();
         }
         dx[i] += stx[i];
+        // if goes up, rotate 180
         document.getElementById('dot' + i).style.top = yp[i] + 'px';
         document.getElementById('dot' + i).style.left = xp[i] + am[i] * Math.sin(dx[i]) + 'px';
     }
