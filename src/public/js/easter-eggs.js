@@ -55,7 +55,7 @@ sty = new Array();
 function createBug() {
     var div = document.createElement('div');
     div.id = 'dot' + i + '';
-    div.innerHTML = " <img style=\" width:40px !important;\" src=\"../src/public/images/buconf_mini_rotated.png\" >";
+    div.innerHTML = " <img style=\" width:40px !important;\" src=\"public/images/buconf_mini_rotated.png\" >";
 
     div.style.top = '0px';
     div.style.left = '15px';
