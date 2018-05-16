@@ -38,7 +38,8 @@ gulp.task('css', function(){
 gulp.task('js', function(){
     return gulp.src([
         'src/public/js/bootstrap.js',
-        'src/public/js/main.js'
+        'src/public/js/main.js',
+        'src/public/js/easter-eggs.js',
     ])
       .pipe(uglify())
       .pipe(concat('main.min.js'))

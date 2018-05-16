@@ -300,26 +300,3 @@ var initGoogleMap = function() {
       icon: pinSymbol("#efe811"),
     });
 };
-
-
-function toggleClass(el, className){
-  if (el.classList) {
-    el.classList.toggle(className);
-  } else {
-    var classes = el.className.split(' ');
-    var existingIndex = classes.indexOf(className);
-
-    if (existingIndex >= 0)
-      classes.splice(existingIndex, 1);
-    else
-      classes.push(className);
-
-    el.className = classes.join(' ');
-  }
-}
-
-
-window.setInterval(function () {
-  toggleClass(document.getElementById('bug-egg'), "bug__image--animation");
-  toggleClass(document.getElementById('bug-egg-bottom'), "bug__image--animation--bottom");
-}, 42000);
