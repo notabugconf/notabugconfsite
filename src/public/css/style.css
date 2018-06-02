@@ -36,7 +36,13 @@ body {
 }
 
 .speaker-img {
-  max-width: 200px;
+  max-width: 150px;
+}
+
+@media (max-width: 576px) {
+  .speaker-img {
+    margin: 10px;
+  }
 }
 
 .bg-yellow {

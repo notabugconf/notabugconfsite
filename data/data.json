@@ -29,9 +29,9 @@
     "talks" : [
         {
             "speakerimage" : "title.png",
-            "speakername" : "AAAA",
-            "title" : "BBBB",
-            "description": "CCCC"
+            "speakername" : "Andrea Stagi",
+            "title" : "Sviluppa la tua web app utilizzando TDD",
+            "description": "Sviluppa la tua web app utilizzando TDD Sviluppa la tua web app utilizzando TDD"
         },
         {
             "speakerimage" : "title.png",
