@@ -28,42 +28,42 @@
     ],
     "talks" : [
         {
-            "speakerimage" : "title.png",
+            "speakerimage" : "laura-bartoli.jpg",
             "speakername" : "Laura Bartoli",
             "title" : "DJANGO GIRLS ITALIA: entrare in contatto con le donne tecnologiche, davvero"
         },
         {
-            "speakerimage" : "title.png",
+            "speakerimage" : "gabriele-baldi.jpg",
             "speakername" : "Gabriele Baldi",
             "title" : "Image recognition with Keras and Tensorflow"
         },
         {
-            "speakerimage" : "title.png",
+            "speakerimage" : "walter-tommasi.jpg",
             "speakername" : "Walter Tommasi",
             "title" : "Vue.js un'alternativa a..."
         },
         {
-            "speakerimage" : "title.png",
+            "speakerimage" : "marouscha-dorenbos-susanna-naldi.jpg",
             "speakername" : "Marouscha Dorenbos e Susanna Naldi",
             "title" : "Tips SEO e Analytics per Developers"
         },
         {
-            "speakerimage" : "title.png",
+            "speakerimage" : "giulio-fagioli.jpg",
             "speakername" : "Giulio Fagioli",
             "title" : "Mobile Before Desktop"
         },
         {
-            "speakerimage" : "title.png",
+            "speakerimage" : "andrei-borcea.jpg",
             "speakername" : "Andrei Borcea",
             "title" : "Remote Exploitation of CAN BUS"
         },
         {
-            "speakerimage" : "title.png",
+            "speakerimage" : "andrea-stagi.jpg",
             "speakername" : "Andrea Stagi",
             "title" : "Testing your web app with TDD"
         },
         {
-            "speakerimage" : "title.png",
+            "speakerimage" : "mino.jpg",
             "speakername" : "Pierdomenico Reitano",
             "title" : "Angular e Real Time Databases"
         }
