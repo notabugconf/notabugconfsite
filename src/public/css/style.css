@@ -39,6 +39,13 @@ body {
   max-width: 200px;
 }
 
+@media (max-width: 576px) {
+  .speaker-img {
+    margin: 10px;
+    max-width: 150px;
+  }
+}
+
 .bg-yellow {
   background-color: #efe811;
   color: white

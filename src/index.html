@@ -35,12 +35,12 @@
   <meta property="twitter:site" content="@notabugconf" />
   <meta property="twitter:image" content="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F44168017%2F245360734036%2F1%2Foriginal.jpg?w=800&auto=compress&rect=0%2C0%2C2160%2C1080&s=d1e52c98090eac78625cd8c2c2454f9c" />
   <meta property="twitter:description" content="NotABugConf è la conferenza toscana che raccoglie professionisti, ricercatori e appassionati della programmazione e non solo. Nella cornice di Pistoia, NotABugConf è un giorno per imparare, confrontarsi e scoprire." />
- 
+
 
   <meta name="msapplication-TileColor" content="#efe811">
   <meta name="msapplication-TileImage" content="public/images/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#efe811">
-  
+
   <link href="public/css/styles.min.css?v=<%- version %>" rel="stylesheet">
 </head>
 
@@ -48,7 +48,7 @@
   <header>
     <figure class="bug__container">
       <img id="bug-egg" class="bug__image bug__image--animation" src="public/images/buconf.png" alt="">
-    </figure>  
+    </figure>
     <nav class="navbar navbar-expand-lg navbar-light  bg-yellow" style="z-index: 99;">
       <a class="navbar-brand" href="#" style="color: black;">#notabugconf</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
@@ -59,7 +59,7 @@
         <div class="navbar-nav">
           <!-- <a class="nav-item nav-link pinklink" href="#speakers">Speakers</a> -->
           <a class="nav-item nav-link pinklink" href="https://notabugconf.eventbrite.it" target="_blank" rel="nofollow">Registrati</a>
-          <a class="nav-item nav-link pinklink" href="#cfp">Call For Papers</a>
+          <a class="nav-item nav-link pinklink" href="#schedule">Schedule</a>
           <a class="nav-item nav-link pinklink" href="#where">Where</a>
           <a class="nav-item nav-link pinklink" href="#sponsors">Supporter</a>
         </div>
@@ -81,16 +81,12 @@
             <div class="col-lg-6 p-3 ">
               <h2 class="featurette-heading">Via Luigi Galvani 15, Pistoia</h2>
               <h2 class="featurette-heading">16 Giugno 2018 &middot; h. 15.30</h2>
-  
+
                 <a href="https://notabugconf.eventbrite.it" target="_blank" rel="nofollow" class="btn btn-primary action-button m-3"> 🎫 Registrati (free) 🎫 </a>
 
                 <p>(l'aperitivo lo offriamo noi 🍹)</p>
-    
-  
-              <p>
-                Inviaci il tuo talk entro e non oltre il 3 Giugno 2018, con una breve descrizione di quello che andrai a trattare
-              </p>
-              <a class="btn btn-primary action-button" href="#cfp">👇 Invia il tuo talk 👇</a>
+
+              <a class="btn btn-primary action-button" href="#schedule">👇 Schedule 👇</a>
             </div>
           </div>
         </div>
@@ -106,48 +102,31 @@
 
           <div class="col-lg-4">
             <img class="img-fluid mx-auto badges-img" src="public/images/mini_badge_info.jpg" alt="I nostri badge">
-  
+
           </div>
         </div>
       </div>
 
-      <div id="cfp" class="container py-5">
+      <div id='schedule' class="container py-5">
+
+        <h2>
+          <span class="bg-pink" style="padding: 5px">Schedule</span>
+        </h2>
+
+        <% _.forEach(talks, function(talk, index) { %>
+        <hr class="featurette-divider">
+
         <div class="row featurette p-3">
-          <div class="col-md-12">
-            <h1>
-              <span class="bg-pink" style="padding: 5px">We want you!</span>
-            </h1>
-            <p class="py-4">Per partecipare come speaker a questo evento, inviaci la tua proposta di talk, seguendo il bottone qui sotto.
-              Hai tempo fino al 3 Giugno 2018 per inviarci la tua proposta. Il talk deve trattare un argomento relativo all'area
-              IT e non deve superare i 30 minuti di durata.
-              <br>
-              <br>
-              <i>Sarai ricontattato via mail con tutte le informazioni riservate agli speaker 💪🏻</i>
-            </p>
-            <button type="button" class="btn btn-primary bg-cyan" style="border: none" onclick="location.href='mailto:cfp@notabugconf.it;'">👏 Invia il tuo talk</button>
-            <p>cfp(at)notabugconf.it</p>
+          <div class="col-md-5 <% if (index % 2 == 0){%>order-md-2<%}%>">
+              <img class="rounded-circle speaker-img" src="public/images/speakers/<%- talk.speakerimage %>" alt="Generic placeholder image">
+          </div>
+          <div class="align-self-center col-md-7 <% if (index % 2 == 0){%>order-md-1<%}%>">
+            <h3 class="featurette-heading "><%- talk.title %><span class="text-muted"> di <%- talk.speakername %></span></h3>
           </div>
         </div>
+        <% }); %>
+
       </div>
-
-      <!-- <div id='speakers'>
-
-            <% _.forEach(talks, function(talk, index) { %>
-                <hr class="featurette-divider">
-        
-                <div class="row featurette p-3">
-                    <div class="col-md-5 <% if (index % 2 == 0){%>order-md-2<%}%>">
-                        <img class="rounded-circle speaker-img" src="public/images/<%- talk.speakerimage %>" alt="Generic placeholder image">
-                    </div>
-                    <div class="col-md-7 <% if (index % 2 == 0){%>order-md-1<%}%>">
-                    <h2 class="featurette-heading "><%- talk.title %>, <span class="text-muted"><%- talk.speakername %></span></h2>
-                    <p class="lead"><%- talk.description %></p>
-                </div>
-
-            </div>
-            <% }); %> -->
-
-    </div>
 
     <div class="py-5" id='where'>
       <div id="map" class="map"></div>
@@ -162,12 +141,12 @@
         <% _.forEach(sponsors, function(sponsor) { %>
             <div class="col-lg-4">
                 <a href="<%- sponsor.url %>" target="_blank" rel="nofollow">
-                  <img class="sponsor-img img-fluid mx-auto grayscale" 
+                  <img class="sponsor-img img-fluid mx-auto grayscale"
                         src="public/images/sponsors/<%- sponsor.image %>"
                         alt="<%- sponsor.name %>">
                 </a>
             </div>
-        <% }); %> 
+        <% }); %>
       </div>
     </div>
 
@@ -196,7 +175,7 @@
       <figure class="bug__container_bottom">
         <img id="bug-egg-bottom" class="bug__image_bottom" src="public/images/buconf.png" alt="">
       </figure>
-    </div>  
+    </div>
   </main>
   <script src="public/js/main.min.js?v=<%- version %>"></script>
 

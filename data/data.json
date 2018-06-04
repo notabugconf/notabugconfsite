@@ -28,22 +28,44 @@
     ],
     "talks" : [
         {
-            "speakerimage" : "title.png",
-            "speakername" : "AAAA",
-            "title" : "BBBB",
-            "description": "CCCC"
+            "speakerimage" : "laura-bartoli.jpg",
+            "speakername" : "Laura Bartoli",
+            "title" : "DJANGO GIRLS ITALIA: entrare in contatto con le donne tecnologiche, davvero"
         },
         {
-            "speakerimage" : "title.png",
-            "speakername" : "AAAA1",
-            "title" : "BBBB1",
-            "description": "CCCC1"
+            "speakerimage" : "gabriele-baldi.jpg",
+            "speakername" : "Gabriele Baldi",
+            "title" : "Image recognition with Keras and Tensorflow"
         },
         {
-            "speakerimage" : "title.png",
-            "speakername" : "AAAA2",
-            "title" : "BBBB2",
-            "description": "CCCC2"
+            "speakerimage" : "walter-tommasi.jpg",
+            "speakername" : "Walter Tommasi",
+            "title" : "Vue.js un'alternativa a..."
+        },
+        {
+            "speakerimage" : "marouscha-dorenbos-susanna-naldi.jpg",
+            "speakername" : "Marouscha Dorenbos e Susanna Naldi",
+            "title" : "Tips SEO e Analytics per Developers"
+        },
+        {
+            "speakerimage" : "giulio-fagioli.jpg",
+            "speakername" : "Giulio Fagioli",
+            "title" : "Mobile Before Desktop"
+        },
+        {
+            "speakerimage" : "andrei-borcea.jpg",
+            "speakername" : "Andrei Borcea",
+            "title" : "Remote Exploitation of CAN BUS"
+        },
+        {
+            "speakerimage" : "andrea-stagi.jpg",
+            "speakername" : "Andrea Stagi",
+            "title" : "Testing your web app with TDD"
+        },
+        {
+            "speakerimage" : "mino.jpg",
+            "speakername" : "Pierdomenico Reitano",
+            "title" : "Angular e Real Time Databases"
         }
     ]
 }
