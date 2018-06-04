@@ -29,21 +29,43 @@
     "talks" : [
         {
             "speakerimage" : "title.png",
+            "speakername" : "Laura Bartoli",
+            "title" : "DJANGO GIRLS ITALIA: entrare in contatto con le donne tecnologiche, davvero"
+        },
+        {
+            "speakerimage" : "title.png",
+            "speakername" : "Gabriele Baldi",
+            "title" : "Image recognition with Keras and Tensorflow"
+        },
+        {
+            "speakerimage" : "title.png",
+            "speakername" : "Walter Tommasi",
+            "title" : "Vue.js un'alternativa a..."
+        },
+        {
+            "speakerimage" : "title.png",
+            "speakername" : "Marouscha Dorenbos e Susanna Naldi",
+            "title" : "Tips SEO e Analytics per Developers"
+        },
+        {
+            "speakerimage" : "title.png",
+            "speakername" : "Giulio Fagioli",
+            "title" : "Mobile Before Desktop"
+        },
+        {
+            "speakerimage" : "title.png",
+            "speakername" : "Andrei Borcea",
+            "title" : "Remote Exploitation of CAN BUS"
+        },
+        {
+            "speakerimage" : "title.png",
             "speakername" : "Andrea Stagi",
-            "title" : "Sviluppa la tua web app utilizzando TDD",
-            "description": "Sviluppa la tua web app utilizzando TDD Sviluppa la tua web app utilizzando TDD"
+            "title" : "Testing your web app with TDD"
         },
         {
             "speakerimage" : "title.png",
-            "speakername" : "AAAA1",
-            "title" : "BBBB1",
-            "description": "CCCC1"
-        },
-        {
-            "speakerimage" : "title.png",
-            "speakername" : "AAAA2",
-            "title" : "BBBB2",
-            "description": "CCCC2"
+            "speakername" : "Pierdomenico Reitano",
+            "title" : "Angular e Real Time Databases"
         }
     ]
 }
