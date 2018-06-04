@@ -36,12 +36,13 @@ body {
 }
 
 .speaker-img {
-  max-width: 150px;
+  max-width: 200px;
 }
 
 @media (max-width: 576px) {
   .speaker-img {
     margin: 10px;
+    max-width: 150px;
   }
 }
 
