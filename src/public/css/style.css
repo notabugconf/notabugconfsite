@@ -12,6 +12,11 @@ body {
   overscroll-behavior-y: none;
 }
 
+.page-title {
+  position: absolute;
+  text-indent: -9999px;
+}
+
 .title-container {
   background-image: url("../images/bug_wallp.jpg");
   background-repeat: no-repeat;
