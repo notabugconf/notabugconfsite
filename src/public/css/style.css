@@ -17,6 +17,10 @@ body {
   text-indent: -9999px;
 }
 
+.event-banner {
+  max-width: 250px;
+}
+
 .title-container {
   background-image: url("../images/bug_wallp.jpg");
   background-repeat: no-repeat;

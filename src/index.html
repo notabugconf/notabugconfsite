@@ -51,16 +51,14 @@
       <img id="bug-egg" class="bug__image bug__image--animation" src="public/images/buconf.png" alt="">
     </figure>
     <nav class="navbar navbar-expand-lg navbar-light  bg-yellow" style="z-index: 99;">
-      <a class="navbar-brand" href="#" style="color: black;">#notabugconf</a>
+      <a class="navbar-brand" href="/" style="color: black;">#notabugconf</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <!-- <a class="nav-item nav-link pinklink" href="#speakers">Speakers</a> -->
-          <a class="nav-item nav-link pinklink" href="https://notabugconf.eventbrite.it" target="_blank" rel="nofollow">Registrati</a>
-          <a class="nav-item nav-link pinklink" href="#schedule">Schedule</a>
+          <a class="nav-item nav-link pinklink" href="/2018.html">Edizione 2018</a>
           <a class="nav-item nav-link pinklink" href="#where">Where</a>
           <a class="nav-item nav-link pinklink" href="#sponsors">Supporter</a>
         </div>
@@ -80,14 +78,16 @@
               <img class="img-fluid mx-auto" src='public/images/title.png' alt="Not a bug conf logo">
             </div>
             <div class="col-lg-6 p-3 ">
+              <div class='m-3'>
+                <img class="img-fluid mx-auto event-banner" src='public/images/bootstrapunp.jpg' alt="Not a bug conf logo">
+              </div>
               <h2 class="featurette-heading">Via Luigi Galvani 15, Pistoia</h2>
-              <h2 class="featurette-heading">16 Giugno 2018 &middot; h. 15.30</h2>
+              <h2 class="featurette-heading">30 Giugno 2018 &middot; h. 15.30</h2>
+              <a href="https://bootstrap4-unplugged-in-pistoia.eventbrite.it" target="_blank" rel="nofollow" class="btn btn-primary action-button m-3"> 🎫 Registrati (free) 🎫 </a>
 
-                <a href="https://notabugconf.eventbrite.it" target="_blank" rel="nofollow" class="btn btn-primary action-button m-3"> 🎫 Registrati (free) 🎫 </a>
+              <p>(Coffee break offerto da noi ☕️)</p>
 
-                <p>(l'aperitivo lo offriamo noi 🍹)</p>
-
-              <a class="btn btn-primary action-button" href="#schedule">👇 Schedule 👇</a>
+              <!-- <a class="btn btn-primary action-button" href="/2018">🙌 I talk della passata edizione 📋</a> -->
             </div>
           </div>
         </div>
@@ -98,7 +98,7 @@
         <div class="row p-1">
           <div class="col-lg-8">
             <h2 style="text-align:left">Chi siamo</h2>
-            <p style="text-align:left">NotABugConf è la conferenza toscana che raccoglie professionisti, ricercatori e appassionati della programmazione e non solo. Nella cornice di Pistoia, NotABugConf è un giorno per imparare, confrontarsi e scoprire.<br/><br/><b>L'aperitivo intorno alle 19.30 lo offriamo noi 🍹</b></p>
+            <p style="text-align:left">NotABugConf è la conferenza toscana che raccoglie professionisti, ricercatori e appassionati della programmazione e non solo. Nella cornice di Pistoia, NotABugConf è un giorno per imparare, confrontarsi e scoprire.<br/><br/><b>Non mancherà occasione di fare networking 🍹</b></p>
           </div>
 
           <div class="col-lg-4">
@@ -106,27 +106,6 @@
 
           </div>
         </div>
-      </div>
-
-      <div id='schedule' class="container py-5">
-
-        <h2>
-          <span class="bg-pink" style="padding: 5px">Schedule</span>
-        </h2>
-
-        <% _.forEach(talks, function(talk, index) { %>
-        <hr class="featurette-divider">
-
-        <div class="row featurette p-3">
-          <div class="col-md-5 <% if (index % 2 == 0){%>order-md-2<%}%>">
-              <img class="rounded-circle speaker-img" src="public/images/speakers/<%- talk.speakerimage %>" alt="Generic placeholder image">
-          </div>
-          <div class="align-self-center col-md-7 <% if (index % 2 == 0){%>order-md-1<%}%>">
-            <h3 class="featurette-heading "><%- talk.title %><span class="text-muted"> di <%- talk.speakername %></span></h3>
-          </div>
-        </div>
-        <% }); %>
-
       </div>
 
     <div class="py-5" id='where'>
@@ -155,8 +134,8 @@
     <footer class="container">
       <hr>
       <p>
-        <a href="privacy-policy">Privacy Policy</a> &middot;
-        <a href="code-of-conduct">Code Of Conduct</a> &middot;
+        <a href="privacy-policy.html">Privacy Policy</a> &middot;
+        <a href="code-of-conduct.html">Code Of Conduct</a> &middot;
         <a href="mailto:info@notabugconf.it">Contattaci</a>
       </p>
       <p>

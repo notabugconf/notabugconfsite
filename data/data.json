@@ -30,42 +30,50 @@
         {
             "speakerimage" : "laura-bartoli.jpg",
             "speakername" : "Laura Bartoli",
-            "title" : "Django Girls Italia: entrare in contatto con le donne tecnologiche, davvero"
+            "title" : "Django Girls Italia: entrare in contatto con le donne tecnologiche, davvero",
+            "link" : ""
         },
         {
             "speakerimage" : "gabriele-baldi.jpg",
             "speakername" : "Gabriele Baldi",
-            "title" : "Image recognition with Keras and Tensorflow"
+            "title" : "Image recognition with Keras and Tensorflow",
+            "link" : ""
         },
         {
             "speakerimage" : "walter-tommasi.jpg",
             "speakername" : "Walter Tommasi",
-            "title" : "Vue.js un'alternativa a..."
+            "title" : "Vue.js un'alternativa a...",
+            "link" : ""
         },
         {
             "speakerimage" : "marouscha-dorenbos-susanna-naldi.jpg",
             "speakername" : "Marouscha Dorenbos e Susanna Naldi",
-            "title" : "Tips SEO e Analytics per Developers"
+            "title" : "Tips SEO e Analytics per Developers",
+            "link" : ""
         },
         {
             "speakerimage" : "giulio-fagioli.jpg",
             "speakername" : "Giulio Fagioli",
-            "title" : "Mobile Before Desktop"
+            "title" : "Mobile Before Desktop",
+            "link" : ""
         },
         {
             "speakerimage" : "andrei-borcea.jpg",
             "speakername" : "Andrei Borcea",
-            "title" : "Remote Exploitation of CAN BUS"
+            "title" : "Remote Exploitation of CAN BUS",
+            "link" : ""
         },
         {
             "speakerimage" : "andrea-stagi.jpg",
             "speakername" : "Andrea Stagi",
-            "title" : "Testing your web app with TDD"
+            "title" : "Testing your web app with TDD",
+            "link" : ""
         },
         {
             "speakerimage" : "mino.jpg",
             "speakername" : "Pierdomenico Reitano",
-            "title" : "Angular e Real Time Databases"
+            "title" : "Angular e Real Time Databases",
+            "link" : ""
         }
     ]
 }

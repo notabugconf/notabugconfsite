@@ -64,14 +64,12 @@ gulp.task('html', function () {
     ])
     .pipe(gulp.dest('dist'));
     gulp.src([
+        'src/2018.html',
         'src/404.html',
         'src/code-of-conduct.html',
         'src/privacy-policy.html',
     ])
     .pipe(template(data))
-    .pipe(rename(function (path) {
-        path.extname = ''
-    }))
     .pipe(gulp.dest('dist'));
 });
 
@@ -80,14 +78,14 @@ gulp.task('images', function () {
       .pipe(image())
       .pipe(gulp.dest('./dist/public/images'));
   });
- 
+
 gulp.task('js-lint', () => {
     return gulp.src(['src/**/*.js','!node_modules/**'])
         .pipe(eslint())
         .pipe(eslint.format())
         .pipe(eslint.failAfterError());
 });
- 
+
 gulp.task('css-lint', function() {
   gulp.src(['src/**/*.css', '!src/public/css/bootstrap.css'])
     .pipe(csslint())
@@ -95,9 +93,9 @@ gulp.task('css-lint', function() {
 });
 
 gulp.task('default', function(){
-  gulp.watch('src/**/*.js', ['js-lint', 'js']); 
-  gulp.watch('src/**/*.css', ['css-lint','css']); 
-  gulp.watch('src/**/*.html', ['html']); 
+  gulp.watch('src/**/*.js', ['js-lint', 'js']);
+  gulp.watch('src/**/*.css', ['css-lint','css']);
+  gulp.watch('src/**/*.html', ['html']);
 });
 
 gulp.task('build', ['fonts', 'html', 'css', 'js', 'images' ]);
