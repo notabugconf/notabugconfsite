@@ -31,49 +31,49 @@
             "speakerimage" : "laura-bartoli.jpg",
             "speakername" : "Laura Bartoli",
             "title" : "Django Girls Italia: entrare in contatto con le donne tecnologiche, davvero",
-            "link" : ""
+            "link" : "/public/talks/Laura_Bartoli_Django_Girls.pdf"
         },
         {
             "speakerimage" : "gabriele-baldi.jpg",
             "speakername" : "Gabriele Baldi",
             "title" : "Image recognition with Keras and Tensorflow",
-            "link" : ""
+            "link" : "/public/talks/Riconoscimento_immagini_con_Keras_e_Tensorflow.pdf"
         },
         {
             "speakerimage" : "walter-tommasi.jpg",
             "speakername" : "Walter Tommasi",
             "title" : "Vue.js un'alternativa a...",
-            "link" : ""
+            "link" : "/public/talks/Walter_Tommasi_Vue_js__un_alternativa_a.pdf"
         },
         {
             "speakerimage" : "marouscha-dorenbos-susanna-naldi.jpg",
             "speakername" : "Marouscha Dorenbos e Susanna Naldi",
             "title" : "Tips SEO e Analytics per Developers",
-            "link" : ""
+            "link" : "/public/talks/Marouscha_Dorenbos_Analytics_web_development.pdf"
         },
         {
             "speakerimage" : "giulio-fagioli.jpg",
             "speakername" : "Giulio Fagioli",
             "title" : "Mobile Before Desktop",
-            "link" : ""
+            "link" : "https://slides.com/remeic/mobile/fullscreen#/"
         },
         {
             "speakerimage" : "andrei-borcea.jpg",
             "speakername" : "Andrei Borcea",
             "title" : "Remote Exploitation of CAN BUS",
-            "link" : ""
+            "link" : "/public/talks/Andrei_Borcea_Remote_Exploitation_of_CAN_BUS.pdf"
         },
         {
             "speakerimage" : "andrea-stagi.jpg",
             "speakername" : "Andrea Stagi",
             "title" : "Testing your web app with TDD",
-            "link" : ""
+            "link" : "https://slides.com/andreastagi/web-app-tdd"
         },
         {
             "speakerimage" : "mino.jpg",
             "speakername" : "Pierdomenico Reitano",
             "title" : "Angular e Real Time Databases",
-            "link" : ""
+            "link" : "/public/talks/Mino_Angular_&_Firebase.pdf"
         }
     ]
 }

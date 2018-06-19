@@ -46,12 +46,12 @@ gulp.task('js', function(){
       .pipe(gulp.dest('dist/public/js'))
   });
 
-  gulp.task('fonts', function(){
+gulp.task('fonts', function(){
     return gulp.src([
         'src/public/fonts/*',
     ])
       .pipe(gulp.dest('dist/public/fonts/'))
-  });
+});
 
 gulp.task('html', function () {
   gulp.src('src/index.html')
