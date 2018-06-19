@@ -116,7 +116,7 @@
           </div>
           <div class="align-self-center col-md-7 <% if (index % 2 == 0){%>order-md-1<%}%>">
             <h3 class="featurette-heading "><%- talk.title %><span class="text-muted"> di <%- talk.speakername %></span></h3>
-            <h4 class="py-3"><a href="<%- talk.link %>" target="_blank">Guarda le slide</a> <% if (talk.link2) {%><a href="<%- talk.link2 %>">(anche queste)</a><%}%></h4>
+            <h4 class="py-3"><a href="<%- talk.link %>" target="_blank">Guarda le slide</a> <% if (talk.link2) {%><a href="<%- talk.link2 %>" target="_blank">(anche queste)</a><%}%></h4>
           </div>
         </div>
         <% }); %>
