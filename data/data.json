@@ -49,7 +49,8 @@
             "speakerimage" : "marouscha-dorenbos-susanna-naldi.jpg",
             "speakername" : "Marouscha Dorenbos e Susanna Naldi",
             "title" : "Tips SEO e Analytics per Developers",
-            "link" : "/public/talks/Marouscha_Dorenbos_Analytics_web_development.pdf"
+            "link" : "/public/talks/Marouscha_Dorenbos_Analytics_web_development.pdf",
+            "link2" : "/public/talks/Susanna_Naldi_SEO_dalle_basi_alle_nuove_tendenze.pdf"
         },
         {
             "speakerimage" : "giulio-fagioli.jpg",
@@ -67,7 +68,7 @@
             "speakerimage" : "andrea-stagi.jpg",
             "speakername" : "Andrea Stagi",
             "title" : "Testing your web app with TDD",
-            "link" : "https://slides.com/andreastagi/web-app-tdd"
+            "link" : "https://slides.com/andreastagi/web-app-tdd/fullscreen#/"
         },
         {
             "speakerimage" : "mino.jpg",
