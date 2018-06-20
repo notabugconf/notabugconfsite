@@ -58,7 +58,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link pinklink" href="/2018.html">Edizione 2018</a>
+          <a class="nav-item nav-link pinklink" href="#schedule">Schedule</a>
           <a class="nav-item nav-link pinklink" href="#where">Where</a>
           <a class="nav-item nav-link pinklink" href="#sponsors">Supporter</a>
         </div>
@@ -78,14 +78,9 @@
               <img class="img-fluid mx-auto" src='public/images/title.png' alt="Not a bug conf logo">
             </div>
             <div class="col-lg-6 p-3 ">
-              <div class='m-3'>
-                <img class="img-fluid mx-auto event-banner" src='public/images/bootstrapunp.jpg' alt="Not a bug conf logo">
-              </div>
               <h2 class="featurette-heading">Via Luigi Galvani 15, Pistoia</h2>
-              <h2 class="featurette-heading">30 Giugno 2018 &middot; h. 15.30</h2>
-              <a href="https://bootstrap4-unplugged-in-pistoia.eventbrite.it" target="_blank" rel="nofollow" class="btn btn-primary action-button m-3"> 🎫 Registrati (free) 🎫 </a>
-
-              <p>(Il coffee break lo offriamo noi ☕️)</p>
+              <h2 class="featurette-heading">16 Giugno 2018 &middot; h. 15.30</h2>
+              <a class="btn btn-primary action-button mt-3" href="#schedule">👇 I talk della passata edizione 👇</a>
             </div>
           </div>
         </div>
@@ -95,15 +90,37 @@
       <div class="container py-5">
         <div class="row p-1">
           <div class="col-lg-8">
-            <h2 style="text-align:left">Chi siamo</h2>
-            <p style="text-align:left">NotABugConf è la conferenza toscana che raccoglie professionisti, ricercatori e appassionati della programmazione e non solo. Nella cornice di Pistoia, NotABugConf è un giorno per imparare, confrontarsi e scoprire.<br/><br/><b>Non mancherà occasione di fare networking 🍹</b></p>
+            <h2 style="text-align:left">Edizione 2018</h2>
+            <p style="text-align:left">La prima edizione di NotABugConf è stata un successo inaspettato. Avete partecipato in tantissimi, siamo stati contenti di conoscere persone davvero incredibili che hanno contribuito in maniera eccezionale alla riuscita di questo evento.. <br/><br/><b>Grazie a tutti, di cuore 🍹</b></p>
           </div>
 
           <div class="col-lg-4">
-            <img class="img-fluid mx-auto badges-img" src="public/images/mini_badge_info.jpg" alt="I nostri badge">
+            <img class="img-fluid mx-auto realbadge-img rounded-circle" src="public/images/badge.jpg" alt="I nostri badge">
 
           </div>
         </div>
+      </div>
+
+      <div id='schedule' class="container py-5">
+
+        <h2>
+          <span class="bg-pink" style="padding: 5px">I talk</span>
+        </h2>
+
+        <% _.forEach(talks, function(talk, index) { %>
+        <hr class="featurette-divider">
+
+        <div class="row featurette p-3">
+          <div class="col-md-5 <% if (index % 2 == 0){%>order-md-2<%}%>">
+              <img class="rounded-circle speaker-img" src="public/images/speakers/<%- talk.speakerimage %>" alt="Generic placeholder image">
+          </div>
+          <div class="align-self-center col-md-7 <% if (index % 2 == 0){%>order-md-1<%}%>">
+            <h3 class="featurette-heading "><%- talk.title %><span class="text-muted"> di <%- talk.speakername %></span></h3>
+            <h4 class="py-3"><a href="<%- talk.link %>" target="_blank">Guarda le slide</a> <% if (talk.link2) {%><a href="<%- talk.link2 %>" target="_blank">(anche queste)</a><%}%></h4>
+          </div>
+        </div>
+        <% }); %>
+
       </div>
 
     <div class="py-5" id='where'>
