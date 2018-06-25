@@ -72,6 +72,10 @@ body {
   color: white
 }
 
+.snapwidget-widget {
+  max-width: 400px;
+}
+
 a.nav-item.nav-link.pinklink:link,
 a.nav-item.nav-link.pinklink:visited,
 a.nav-item.nav-link.pinklink:hover,
