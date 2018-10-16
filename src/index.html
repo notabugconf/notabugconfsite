@@ -47,20 +47,18 @@
 <body class="text-center" style="overflow-x: hidden;">
   <header>
     <h1 class="page-title">Not a bug conf</h1>
-    <figure class="bug__container">
-      <img id="bug-egg" class="bug__image bug__image--animation" src="public/images/buconf.png" alt="">
-    </figure>
-    <nav class="navbar navbar-expand-lg navbar-light  bg-yellow" style="z-index: 99;">
-      <a class="navbar-brand" href="/" style="color: black;">#notabugconf</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-amber" style="z-index: 99;">
+      <a class="navbar-brand" href="/" style="color: black;">#hacktoberfest</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link pinklink" href="/2018.html">Edizione 2018</a>
-          <a class="nav-item nav-link pinklink" href="#where">Where</a>
-          <a class="nav-item nav-link pinklink" href="#sponsors">Supporter</a>
+          <a class="nav-item nav-link crimsonlink" href="#schedule">Schedule</a>
+          <a class="nav-item nav-link crimsonlink" href="#where">Where</a>
+          <a class="nav-item nav-link crimsonlink" href="#sponsors">Supporter</a>
+          <a class="nav-item nav-link crimsonlink" href="/2018.html">Edizione 2018</a>
         </div>
       </div>
     </nav>
@@ -69,39 +67,48 @@
 
     <div class="">
 
-      <div class="title-container">
+      <div class="hacktober-container">
         <div class="overlay"></div>
 
         <div class="container-fluid">
           <div class="row inner align-items-center">
             <div class="col-lg-6 p-3">
-              <img class="img-fluid mx-auto" src='public/images/title.png' alt="Not a bug conf logo">
+              <img class="img-fluid mx-auto" src='public/images/hacktober-logo.png' alt="Not a bug conf logo">
             </div>
             <div class="col-lg-6 p-3 ">
-              <div class='m-3'>
-                <img class="img-fluid mx-auto event-banner" src='public/images/bootstrapunp.jpg' alt="Not a bug conf logo">
-              </div>
+              <h2 class='m-3 featurette-heading'>
+                Torna l’​Hacktoberfest​​ e abbiamo deciso di celebrare l’open source insieme a voi!
+              </h2>
+              <br>
+              <h2 class="featurette-heading">Ci vediamo in</h2>
               <h2 class="featurette-heading">Via Luigi Galvani 15, Pistoia</h2>
-              <h2 class="featurette-heading">30 Giugno 2018 &middot; h. 15.30</h2>
-              <a href="https://bootstrap4-unplugged-in-pistoia.eventbrite.it" target="_blank" rel="nofollow" class="btn btn-primary action-button m-3"> 🎫 Registrati (free) 🎫 </a>
+              <h2 class="featurette-heading">20 Ottobre 2018 &middot; h. 15.00</h2>
+              <a href="https://www.eventbrite.it/e/biglietti-hacktoberfest-openhack-lotrek-pistoia-51449451695" target="_blank" rel="nofollow" class="btn btn-primary action-button-hacktober m-3"> 🎫 Registrati (free) 🎫 </a>
 
-              <p>(Il coffee break lo offriamo noi ☕️)</p>
+              <p>(Ci sarà da bere e da mangiare 🍻🍿)</p>
             </div>
           </div>
         </div>
 
       </div>
 
-      <div class="container py-5">
+      <div id="schedule" class="container py-5">
         <div class="row p-1">
           <div class="col-lg-8">
-            <h2 style="text-align:left">Chi siamo</h2>
-            <p style="text-align:left">NotABugConf è la conferenza toscana che raccoglie professionisti, ricercatori e appassionati della programmazione e non solo. Nella cornice di Pistoia, NotABugConf è un giorno per imparare, confrontarsi e scoprire.<br/><br/><b>Non mancherà occasione di fare networking 🍹</b></p>
+            <h2 style="text-align:left">Cosa faremo</h2>
+            <div style="text-align:left">
+            <p>L’evento è PER TUTTI​​, nessuno escluso! Pensi di non essere ancora pronto per partecipare ad una giornata così? Ti sbagli, di grosso, quindi vieni a divertirti e a sporcarti un po’ le mani con il codice. Vi possiamo promettere cibo, bevande, buona compagnia, pair coding e qualche chiacchiera!</p>
+
+            <p>Inoltre, <b>se riuscirete a fare 5 pull requests entro il 31 di Ottobre riceverete la maglietta originale dell’evento ​Hacktoberfest ​​spedita direttamente a casa vostra da ​Digitalocean</b>,​ creatore del fest, tutto spesato!</p>
+
+            <p>Dopo una piccola intro all’​open source​​ e a cosa significa pull ​request​​ decideremo tutti insieme su quali progetti investire il nostro tempo e i più esperti avranno il piacere di aiutare le new entry nel mondo del coding open source anche attraverso il pair coding!</p>
+
+            <p>Al termine dei lavori potrete aggiungere sul vostro profilo LinkedIn la dicitura professionale “​Open Sorcerer​​”, e solo quello vale la partecipazione!</p></div>
           </div>
 
           <div class="col-lg-4">
-            <img class="img-fluid mx-auto badges-img" src="public/images/mini_badge_info.jpg" alt="I nostri badge">
-
+            <img class="img-fluid mx-auto badges-img" src="public/images/computer_L.png" alt="Hacktoberfest computer">
+            <img class="img-fluid mx-auto" src="public/images/hacktoberfest_label.png" alt="Hacktoberfest label">
           </div>
         </div>
       </div>
@@ -139,7 +146,7 @@
       <p>
         <a href="https://www.facebook.com/notabugconf/" target="_blank" rel="nofollow">Facebook</a> &middot;
         <a href="https://twitter.com/notabugconf" target="_blank" rel="nofollow">Twitter</a> &middot;
-        <a href="https://notabugconf.eventbrite.it" target="_blank" rel="nofollow">Eventbrite</a> &middot;
+        <a href="https://www.eventbrite.it/e/biglietti-hacktoberfest-openhack-lotrek-pistoia-51449451695" target="_blank" rel="nofollow">Eventbrite</a> &middot;
         <a href="https://t.me/joinchat/AhrWXBFT_jUUFqAqkg6AzA" target="_blank" rel="nofollow">Telegram Group</a> &middot;
         <a href="https://github.com/notabugconf" target="_blank" rel="nofollow">Github</a>
       </p>

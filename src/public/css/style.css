@@ -21,6 +21,13 @@ body {
   max-width: 250px;
 }
 
+.hacktober-container {
+    background-image: url("../images/bg-noise.png");
+    background-repeat: repeat;
+    color: #fff;
+    position: relative;
+  }
+
 .title-container {
   background-image: url("../images/bug_wallp.jpg");
   background-repeat: no-repeat;
@@ -55,6 +62,16 @@ body {
   }
 }
 
+.bg-amber {
+    background-color: #FF9A56;
+    color: white
+}
+
+.bg-crimson {
+    background-color: #582D41;
+    color: white
+}
+
 .bg-yellow {
   background-color: #efe811;
   color: white
@@ -76,6 +93,13 @@ body {
   max-width: 400px;
 }
 
+a.nav-item.nav-link.crimsonlink:link,
+a.nav-item.nav-link.crimsonlink:visited,
+a.nav-item.nav-link.crimsonlink:hover,
+a.nav-item.nav-link.crimsonlink:active {
+  color: #582D41;
+}
+
 a.nav-item.nav-link.pinklink:link,
 a.nav-item.nav-link.pinklink:visited,
 a.nav-item.nav-link.pinklink:hover,
@@ -89,7 +113,7 @@ a.nav-item.nav-link.pinklink:active {
 }
 
 .badges-img {
-  border-bottom: 5px solid darkred;
+  border-bottom: 5px solid #582D41;
 }
 
 .realbadge-img {
@@ -109,6 +133,12 @@ a.nav-item.nav-link.pinklink:active {
 .action-button {
   background-color: #ee2f7a;
   border: none;
+}
+
+.action-button-hacktober {
+    background-color: #FF9A56;
+    color: #582D41;
+    border: none;
 }
 
 .map{
@@ -131,10 +161,26 @@ a.nav-item.nav-link.pinklink:active {
   position: relative;
 }
 
+.nav-item.nav-link.crimsonlink {
+    position: relative;
+}
+
 @media (min-width: 1200px) {
   .nav-item.nav-link.pinklink:hover:after {
     animation: pointypoint 2s infinite;
     content: "👆";
+    font-size: 2rem;
+    left: 0;
+    margin: -15px auto 0;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    transition: all ease .3s;
+    z-index: 100;
+  }
+  .nav-item.nav-link.crimsonlink:hover:after {
+    animation: pointypoint 2s infinite;
+    content: "🍁";
     font-size: 2rem;
     left: 0;
     margin: -15px auto 0;
