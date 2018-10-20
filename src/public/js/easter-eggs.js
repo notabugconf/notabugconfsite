@@ -1,4 +1,7 @@
 function toggleClass(el, className) {
+    if (!el) {
+        return;
+    }
     if (el.classList) {
         el.classList.toggle(className);
     } else {

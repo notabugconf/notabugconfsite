@@ -26,7 +26,7 @@ var initGoogleMap = function() {
           "elementType": "geometry",
           "stylers": [
             {
-              "color": "#1d2c4d"
+              "color": "#2B81D9"
             }
           ]
         },
@@ -87,7 +87,7 @@ var initGoogleMap = function() {
           "elementType": "geometry",
           "stylers": [
             {
-              "color": "#023e58"
+              "color": "#582D41"
             }
           ]
         },
@@ -123,7 +123,7 @@ var initGoogleMap = function() {
           "elementType": "geometry.fill",
           "stylers": [
             {
-              "color": "#023e58"
+              "color": "#2B81D9"
             }
           ]
         },
@@ -186,7 +186,7 @@ var initGoogleMap = function() {
           "elementType": "geometry.fill",
           "stylers": [
             {
-              "color": "#e315e8"
+              "color": "#FF9A56"
             }
           ]
         },
@@ -213,7 +213,7 @@ var initGoogleMap = function() {
           "elementType": "labels.text.stroke",
           "stylers": [
             {
-              "color": "#023e58"
+              "color": "#2B81D9"
             }
           ]
         },
@@ -297,6 +297,6 @@ var initGoogleMap = function() {
     var marker = new google.maps.Marker({
       position: lotrek_head_quarters,
       map: map,
-      icon: pinSymbol("#efe811"),
+      icon: pinSymbol("#FF9A56"),
     });
 };
