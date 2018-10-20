@@ -180,7 +180,7 @@ a.nav-item.nav-link.pinklink:active {
   }
   .nav-item.nav-link.crimsonlink:hover:after {
     animation: pointypoint 2s infinite;
-    content: "🍁";
+    content: "🍺";
     font-size: 2rem;
     left: 0;
     margin: -15px auto 0;
