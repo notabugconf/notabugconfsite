@@ -12,7 +12,14 @@
 
     gulp build
 
-You can find the website in the `dist/` folder. Enjoy!
+## Run
+
+You can find the website in the `dist/` folder. To run it on the fly
+
+    cd dist
+    python -m SimpleHTTPServer 8000
+
+Enjoy!
 
 ### License
 
