@@ -28,6 +28,15 @@ body {
     position: relative;
   }
 
+.xmas-container {
+    background-image: url("../images/bg-xmas.jpg");
+    background-repeat: repeat;
+    color: #fff;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+  }
+
 .title-container {
   background-image: url("../images/bug_wallp.jpg");
   background-repeat: no-repeat;
@@ -240,8 +249,8 @@ a.nav-item.nav-link.pinklink:active {
   z-index: 2;
 }
 
-.navbar-brand__xmas{
-  color: #e5ffce !important;
+.navbar-brand.navbar-brand__xmas{
+  color: #e5ffce ;
 }
 
 
