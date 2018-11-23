@@ -1,0 +1,48 @@
+<div class="container py-5">
+  <div class="row p-3 justify-content-center" id='sponsors'>
+    <div class="col-lg-12">
+      <h2>I nostri supporter</h2>
+    </div>
+    <% _.forEach(sponsors, function(sponsor) { %>
+        <div class="col-lg-4">
+            <a href="<%- sponsor.url %>" target="_blank" rel="nofollow">
+              <img class="sponsor-img img-fluid mx-auto grayscale"
+                    src="public/images/sponsors/<%- sponsor.image %>"
+                    alt="<%- sponsor.name %>">
+            </a>
+        </div>
+    <% }); %>
+  </div>
+</div>
+<footer class="container">
+  <hr>
+  <p>
+    <a href="privacy-policy.html">Privacy Policy</a> &middot;
+    <a href="code-of-conduct.html">Code Of Conduct</a> &middot;
+    <a href="mailto:info@notabugconf.it">Contattaci</a>
+  </p>
+  <p>
+    <a href="https://www.facebook.com/notabugconf/" target="_blank" rel="nofollow">Facebook</a> &middot;
+    <a href="https://twitter.com/notabugconf" target="_blank" rel="nofollow">Twitter</a> &middot;
+    <a href="#" target="_blank" rel="nofollow">Eventbrite</a> &middot;
+    <a href="https://t.me/joinchat/AhrWXBFT_jUUFqAqkg6AzA" target="_blank" rel="nofollow">Telegram Group</a> &middot;
+    <a href="https://github.com/notabugconf" target="_blank" rel="nofollow">Github</a>
+  </p>
+  <p>&copy; 2018 Not A Bug Conf 🐛</p>
+  <p>
+    <a href="#">Back to top</a>
+  </p>
+
+</footer>
+<div class="relative-container">
+  <figure class="bug__container_bottom">
+    <img id="bug-egg-bottom" class="bug__image_bottom" src="public/images/buconf.png" alt="">
+  </figure>
+</div>
+</main>
+<script src="public/js/main.min.js?v=<%- version %>"></script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA38H_bb3Xm5MVHF4lXEn_Wi4y7Vx43oo&callback=initGoogleMap">
+
+
+</script>

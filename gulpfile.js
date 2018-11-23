@@ -4,9 +4,12 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var template = require('gulp-template');
+var gulpIncludeTemplate = require("gulp-include-template");
 var image = require('gulp-image');
 var eslint = require('gulp-eslint');
 var csslint = require('gulp-csslint');
+var runSequence = require('run-sequence');
+
 
 // Site data
 var data = require('./data/data.json');
@@ -53,9 +56,19 @@ gulp.task('fonts', function(){
       .pipe(gulp.dest('dist/public/fonts/'))
 });
 
+gulp.task('partials', function () {
+  gulp.src([
+        'src/includes/body.html',
+        'src/includes/footer.html',
+        'src/includes/header.html'
+    ])
+    .pipe(template(data))
+    .pipe(gulp.dest('src/partials'));
+});
+
 gulp.task('html', function () {
   gulp.src('src/index.html')
-    .pipe(template(data))
+    .pipe(gulpIncludeTemplate())
     .pipe(gulp.dest('dist'));
     gulp.src([
         'src/robots.txt',
@@ -105,6 +118,10 @@ gulp.task('default', function(){
 });
 
 gulp.task('build', ['talks', 'fonts', 'html', 'css', 'js', 'images' ]);
-gulp.task('dev', ['talks', 'fonts', 'html', 'css', 'js' ]);
+gulp.task('bundlehtml',function() {
+  runSequence('partials',
+              'html');
+});
+gulp.task('dev', ['talks', 'fonts', 'bundlehtml', 'css', 'js' ]);
 
 gulp.task('test', [ 'js-lint', 'css-lint' ]);
