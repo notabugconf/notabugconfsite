@@ -65,6 +65,7 @@ gulp.task('html', function () {
     .pipe(gulp.dest('dist'));
     gulp.src([
         'src/2018.html',
+        'src/hacktoberfest.html',
         'src/404.html',
         'src/code-of-conduct.html',
         'src/privacy-policy.html',
