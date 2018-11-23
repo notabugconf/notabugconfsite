@@ -105,4 +105,6 @@ gulp.task('default', function(){
 });
 
 gulp.task('build', ['talks', 'fonts', 'html', 'css', 'js', 'images' ]);
+gulp.task('dev', ['talks', 'fonts', 'html', 'css', 'js' ]);
+
 gulp.task('test', [ 'js-lint', 'css-lint' ]);
