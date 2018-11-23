@@ -26,7 +26,7 @@ var initGoogleMap = function() {
           "elementType": "geometry",
           "stylers": [
             {
-              "color": "#2B81D9"
+              "color": "#8b2424"
             }
           ]
         },
@@ -34,7 +34,7 @@ var initGoogleMap = function() {
           "elementType": "labels.text.fill",
           "stylers": [
             {
-              "color": "#8ec3b9"
+              "color": "#ffffff"
             }
           ]
         },
@@ -42,7 +42,7 @@ var initGoogleMap = function() {
           "elementType": "labels.text.stroke",
           "stylers": [
             {
-              "color": "#1a3646"
+              "color": "#fa4242"
             }
           ]
         },
@@ -69,7 +69,7 @@ var initGoogleMap = function() {
           "elementType": "geometry.stroke",
           "stylers": [
             {
-              "color": "#4b6878"
+              "color": "#000000"
             }
           ]
         },
@@ -78,7 +78,7 @@ var initGoogleMap = function() {
           "elementType": "geometry.stroke",
           "stylers": [
             {
-              "color": "#334e87"
+              "color": "#000000"
             }
           ]
         },
@@ -87,7 +87,7 @@ var initGoogleMap = function() {
           "elementType": "geometry",
           "stylers": [
             {
-              "color": "#582D41"
+              "color": "#fa4242"
             }
           ]
         },
@@ -105,7 +105,7 @@ var initGoogleMap = function() {
           "elementType": "labels.text.fill",
           "stylers": [
             {
-              "color": "#6f9ba5"
+              "color": "#ffffff"
             }
           ]
         },
@@ -114,7 +114,7 @@ var initGoogleMap = function() {
           "elementType": "labels.text.stroke",
           "stylers": [
             {
-              "color": "#1d2c4d"
+              "color": "#fa4242"
             }
           ]
         },
@@ -123,7 +123,7 @@ var initGoogleMap = function() {
           "elementType": "geometry.fill",
           "stylers": [
             {
-              "color": "#2B81D9"
+              "color": "#fa4242"
             }
           ]
         },
@@ -132,7 +132,7 @@ var initGoogleMap = function() {
           "elementType": "labels.text.fill",
           "stylers": [
             {
-              "color": "#3C7680"
+              "color": "#ffffff"
             }
           ]
         },
@@ -141,7 +141,7 @@ var initGoogleMap = function() {
           "elementType": "geometry",
           "stylers": [
             {
-              "color": "#304a7d"
+              "color": "#8b2424"
             }
           ]
         },
@@ -150,7 +150,7 @@ var initGoogleMap = function() {
           "elementType": "labels.text.fill",
           "stylers": [
             {
-              "color": "#98a5be"
+              "color": "#ffffff"
             }
           ]
         },
@@ -159,7 +159,7 @@ var initGoogleMap = function() {
           "elementType": "labels.text.stroke",
           "stylers": [
             {
-              "color": "#1d2c4d"
+              "color": "#fa4242"
             }
           ]
         },
@@ -177,7 +177,7 @@ var initGoogleMap = function() {
           "elementType": "geometry",
           "stylers": [
             {
-              "color": "#2c6675"
+              "color": "#8b2424"
             }
           ]
         },
@@ -186,7 +186,7 @@ var initGoogleMap = function() {
           "elementType": "geometry.fill",
           "stylers": [
             {
-              "color": "#FF9A56"
+              "color": "#8b2424"
             }
           ]
         },
@@ -195,7 +195,7 @@ var initGoogleMap = function() {
           "elementType": "geometry.stroke",
           "stylers": [
             {
-              "color": "#255763"
+              "color": "#8b2424"
             }
           ]
         },
@@ -204,7 +204,7 @@ var initGoogleMap = function() {
           "elementType": "labels.text.fill",
           "stylers": [
             {
-              "color": "#b0d5ce"
+              "color": "#ffffff"
             }
           ]
         },
@@ -213,7 +213,7 @@ var initGoogleMap = function() {
           "elementType": "labels.text.stroke",
           "stylers": [
             {
-              "color": "#2B81D9"
+              "color": "#8b2424"
             }
           ]
         },
@@ -222,7 +222,7 @@ var initGoogleMap = function() {
           "elementType": "geometry.fill",
           "stylers": [
             {
-              "color": "#28fff7"
+              "color": "#8b2424"
             }
           ]
         },
@@ -231,7 +231,7 @@ var initGoogleMap = function() {
           "elementType": "labels.text.fill",
           "stylers": [
             {
-              "color": "#98a5be"
+              "color": "#8b2424"
             }
           ]
         },
@@ -249,7 +249,7 @@ var initGoogleMap = function() {
           "elementType": "geometry.fill",
           "stylers": [
             {
-              "color": "#283d6a"
+              "color": "#8b2424"
             }
           ]
         },
@@ -258,7 +258,7 @@ var initGoogleMap = function() {
           "elementType": "geometry",
           "stylers": [
             {
-              "color": "#3a4762"
+              "color": "#8b2424"
             }
           ]
         },
@@ -288,7 +288,7 @@ var initGoogleMap = function() {
           path: 'M 0,0 -1,-2 V -43 H 1 V -2 z M 1,-40 H 30 V -20 H 1 z',
           fillColor: color,
           fillOpacity: 1,
-          strokeColor: '#000',
+          strokeColor: '#fa4242',
           strokeWeight: 1,
           scale: 1,
      };
@@ -297,6 +297,6 @@ var initGoogleMap = function() {
     var marker = new google.maps.Marker({
       position: lotrek_head_quarters,
       map: map,
-      icon: pinSymbol("#FF9A56"),
+      icon: pinSymbol("#e5ffce"),
     });
 };
