@@ -1,22 +1,22 @@
 {
-  "name": "notabugconf",
-  "version": "1.7.2",
-  "description": "Not a bug conf web site",
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-csso": "^3.0.0",
-    "gulp-image": "^4.3.0",
-    "gulp-include-template": "^0.2.3",
-    "gulp-rename": "^1.2.2",
-    "gulp-template": "^5.0.0",
-    "gulp-uglify": "^3.0.0",
-    "run-sequence": "^2.2.1"
-  },
-  "author": "Not a bug conf",
-  "license": "DO WHAT THE FUCK YOU WANT TO",
-  "dependencies": {
-    "gulp-csslint": "^1.0.1",
-    "gulp-eslint": "^4.0.2"
-  }
+    "name": "notabugconf",
+    "version": "2.0.0",
+    "description": "Not a bug conf web site",
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "gulp-concat": "^2.6.1",
+        "gulp-csso": "^3.0.0",
+        "gulp-image": "^4.3.0",
+        "gulp-include-template": "^0.2.3",
+        "gulp-rename": "^1.2.2",
+        "gulp-template": "^5.0.0",
+        "gulp-uglify": "^3.0.0",
+        "run-sequence": "^2.2.1"
+    },
+    "author": "Not a bug conf",
+    "license": "DO WHAT THE FUCK YOU WANT TO",
+    "dependencies": {
+        "gulp-csslint": "^1.0.1",
+        "gulp-eslint": "^4.0.2"
+    }
 }
