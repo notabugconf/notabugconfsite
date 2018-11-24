@@ -28,6 +28,15 @@ body {
     position: relative;
   }
 
+.xmas-container {
+    background-image: url("../images/bg-xmas.jpg");
+    background-repeat: repeat;
+    color: #fff;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+  }
+
 .title-container {
   background-image: url("../images/bug_wallp.jpg");
   background-repeat: no-repeat;
@@ -67,6 +76,12 @@ body {
     color: white
 }
 
+.bg-xmas {
+  background-color: #fa4242;
+  color: white
+}
+
+
 .bg-crimson {
     background-color: #582D41;
     color: white
@@ -99,6 +114,15 @@ a.nav-item.nav-link.crimsonlink:hover,
 a.nav-item.nav-link.crimsonlink:active {
   color: #582D41;
 }
+
+
+a.nav-item.nav-link.xmaslink:link,
+a.nav-item.nav-link.xmaslink:visited,
+a.nav-item.nav-link.xmaslink:hover,
+a.nav-item.nav-link.xmaslink:active {
+  color: #fff;
+}
+
 
 a.nav-item.nav-link.pinklink:link,
 a.nav-item.nav-link.pinklink:visited,
@@ -141,6 +165,22 @@ a.nav-item.nav-link.pinklink:active {
     border: none;
 }
 
+.action-button-xmas{
+  background-color: #fa4242;
+  color: #e5ffce;
+  border: none;
+}
+
+.action-button-xmas:hover, .action-button-xmas:active, .action-button-xmas:focus{
+  background-color: #a72323 !important;
+
+  border: none !important;
+}
+
+.action-button-xmas.focus, .action-button-xmas:focus{
+  box-shadow: 0 0 0 0.2rem rgba(168, 35, 35, 0.31) !important;
+}
+
 .map{
   display: block;
   min-height: 20em;
@@ -163,6 +203,11 @@ a.nav-item.nav-link.pinklink:active {
 
 .nav-item.nav-link.crimsonlink {
     position: relative;
+}
+
+
+.nav-item.nav-link.xmaslink {
+  position: relative;
 }
 
 @media (min-width: 1200px) {
@@ -190,11 +235,28 @@ a.nav-item.nav-link.pinklink:active {
     transition: all ease .3s;
     z-index: 100;
   }
+  .nav-item.nav-link.xmaslink:hover:after {
+    animation: pointypoint 2s infinite;
+    content: "❄️";
+    font-size: 2rem;
+    left: 0;
+    margin: -15px auto 0;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    transition: all ease .3s;
+    z-index: 100;
+  }
 }
 
 .navbar{
   z-index: 2;
 }
+
+.navbar-brand.navbar-brand__xmas{
+  color: #e5ffce ;
+}
+
 
 .bug__container{
   position: absolute;
@@ -291,5 +353,18 @@ a.nav-item.nav-link.pinklink:active {
 }
 
 
+.newsletter input{
+  padding: .25rem;
+  border-radius: 2rem;
+  border:solid 1px #ededed;
+  text-align: center;
+}
 
+.newsletter input[type="submit"]{
+  padding: .375rem .75rem;
+  border-radius: .25rem;
+  outline:none;
+  border: none;
+}
 
+textarea, select, input, button { outline: none; }
