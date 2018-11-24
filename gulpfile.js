@@ -117,11 +117,14 @@ gulp.task('default', function(){
   gulp.watch('src/**/*.html', ['html']);
 });
 
-gulp.task('build', ['talks', 'fonts', 'html', 'css', 'js', 'images' ]);
+
 gulp.task('bundlehtml',function() {
-  runSequence('partials',
-              'html');
-});
+    runSequence('partials',
+                'html');
+  });
+
+gulp.task('build', ['talks', 'fonts', 'bundlehtml', 'css', 'js', 'images' ]);
+
 gulp.task('dev', ['talks', 'fonts', 'bundlehtml', 'css', 'js' ]);
 
 gulp.task('test', [ 'js-lint', 'css-lint' ]);
