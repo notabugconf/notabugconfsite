@@ -171,10 +171,14 @@ a.nav-item.nav-link.pinklink:active {
   border: none;
 }
 
-.action-button-xmas:hover{
-  background-color: #e5ffce;
-  color: #fa4242;
-  border: none;
+.action-button-xmas:hover, .action-button-xmas:active, .action-button-xmas:focus{
+  background-color: #a72323 !important;
+
+  border: none !important;
+}
+
+.action-button-xmas.focus, .action-button-xmas:focus{
+  box-shadow: 0 0 0 0.2rem rgba(168, 35, 35, 0.31) !important;
 }
 
 .map{
@@ -349,5 +353,18 @@ a.nav-item.nav-link.pinklink:active {
 }
 
 
+.newsletter input{
+  padding: .25rem;
+  border-radius: 2rem;
+  border:solid 1px #ededed;
+  text-align: center;
+}
 
+.newsletter input[type="submit"]{
+  padding: .375rem .75rem;
+  border-radius: .25rem;
+  outline:none;
+  border: none;
+}
 
+textarea, select, input, button { outline: none; }
