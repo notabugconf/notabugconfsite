@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Not a bug conf</title>
+    <title>Not a bug</title>
     <meta name="description" content="Not A Bug Conf è la conferenza toscana che raccoglie professionisti, ricercatori e appassionati della programmazione e non solo #notabugconf">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 
@@ -37,9 +37,9 @@
     <meta property="twitter:description" content="NotABugConf è la conferenza toscana che raccoglie professionisti, ricercatori e appassionati della programmazione e non solo. Nella cornice di Pistoia, NotABugConf è un giorno per imparare, confrontarsi e scoprire." />
 
 
-    <meta name="msapplication-TileColor" content="#efe811">
+    <meta name="msapplication-TileColor" content="#fa4242">
     <meta name="msapplication-TileImage" content="public/images/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#efe811">
+    <meta name="theme-color" content="#fa4242">
 
     <link href="public/css/styles.min.css?v=<%- version %>" rel="stylesheet">
 </head>
@@ -65,7 +65,38 @@
         logged_in_greeting="Ciao! Come possiamo aiutarti?" logged_out_greeting="Ciao! Come possiamo aiutarti?"
         minimized="true">
     </div>
-
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+        ❄
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+      </div>
     <% include('partials/header.html'); %>
     <main role="main">
 
@@ -87,7 +118,7 @@
                             <h2 class="featurette-heading">Ci vediamo in</h2>
                             <h2 class="featurette-heading">Via Luigi Galvani 15, Pistoia</h2>
                             <h2 class="featurette-heading">15 Dicembre 2018 &middot; h. 15.00</h2>
-                            <a href="#" target="_blank" rel="nofollow" class="btn btn-primary action-button-xmas m-3">
+                            <a href="https://www.eventbrite.it/e/biglietti-not-a-bug-xmas-edition-52966743957?aff=site" target="_blank" rel="nofollow" class="btn btn-primary action-button-xmas m-3">
                                 🎫 (Registrati coming soon) 🎫 </a>
                             <p>(Ci sarà da bere e da mangiare 🍻🍿)</p>
                         </div>
@@ -101,28 +132,112 @@
                     <div class="col-lg-8">
                         <h2 style="text-align:left">Cosa faremo</h2>
                         <div style="text-align:left">
-                            <br><br>
+                            <br>
                             <p>Per te, che programmi sotto le coperte anche quando il natale è fuori dalla porta, anche
                                 quando la neve arriva di notte, tutta vergognosa.</p>
 
                             <p>E’ per te che nevichi codice dalla testa che abbiamo creato questo workshop di amore e
                                 amicizia, ma soprattutto Arduino, Raspberry Pi, lucine di natale e progettazione di
                                 frontend e backend per comandare il tutto con comodi web protocols.</p>
-
-                            <p>La magia del natale.</p>
-
-                            <p>Ti aspettiamo a Lotrék.</p>
-
+                            <br>
+                            <hr>
+                            <div class="d-flex">
+                                <span class="emoicon">🎄&nbsp;</span>
+                                <h3 class="color-xmas">Costruiremo tutti insieme un albero di Natale con animazioni su strisce di led.</h3>
+                            </div>
+                            <hr>
+                            <br>
                         </div>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-4" >
                         <img class="img-fluid mx-auto" src="public/images/computer_xmas.png" alt="Hacktoberfest computer">
 
                     </div>
                 </div>
             </div>
-
+            <div class="alt-box">
+                    <div class="container">
+                        <div class="text-center">
+                            <br>
+                            <br>
+                            <h3>👩‍💻 Più siamo più ci divertiamo! 👨‍💻</h3>
+                            <p>ci divideremo in 3 team:</p>
+                            <br>
+                        </div>
+                        <div class="row text-left">
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <span class="emoicon">🛠</span>
+                                    <hr>
+                                </div>
+                                <h4 class="color-xmas">Hardware</h4>
+                                <p>Si occuperà del setup Raspberry + Arduino creando un protocollo di comunicazione per avviare una determinata animazione sull'albero di Natale e gestire una coda di richieste, nonché le animazioni.</p>
+                                <br>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <span class="emoicon">💻</span>
+                                    <hr>
+                                </div>
+                                <h4 class="color-xmas">Backend</h4>
+                                <p>Si occuperà di creare un servizio REST Api dal quale poter chiamare una determinata animazione e metterla in coda alle altre.</p>
+                                <br>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <span class="emoicon">📱</span>
+                                    <hr>
+                                </div>
+                                <h4 class="color-xmas">Frontend</h4>
+                                <p>Si occuperà di creare un pannello di controllo completo di login che comunicherà con le API per richiamare una determinata animazione.</p>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                                <br>
+                                <br>
+                                <div class="text-center">
+                                    <h3 class="color-xmas">🤔 FAQ 🤓</h3>
+                                    <br>
+                                    <hr>
+                                    <br>
+                                </div>
+                                <div class="faq question text-left d-flex align-items-center">
+                                    <p>Quali sono le opzioni di trasporto/parcheggio per l'evento?</p>
+                                </div>
+                                <div class="faq answer text-left d-flex align-items-center">
+                                    <p>C'è un ampio parcheggio in strada (zona industriale)</p>
+                                </div>
+                                <hr>
+                                <div class="faq question text-left d-flex align-items-center">
+                                    <p>Cosa posso portare all'evento?</p>
+                                </div>
+                                <div class="faq answer text-left d-flex align-items-center">
+                                    <p>È necessario portare il computer</p>
+                                </div>
+                                <hr>
+                                <div class="faq question text-left d-flex align-items-center">
+                                    <p>Come posso contattare l'organizzatore per eventuali domande?</p>
+                                </div>
+                                <div class="faq answer text-left d-flex align-items-center">
+                                    <p>Puoi scriverci alla mail hello@notabug.it oppure contattarci sul nostro gruppo telegram che trovi sul nostro sito notabug.it</p>
+                                </div>
+                                <hr>
+                                <div class="faq question text-left d-flex align-items-center">
+                                    <p>Devo portare i biglietti stampati all'evento?</p>
+                                </div>
+                                <div class="faq answer text-left d-flex align-items-center">
+                                    <p>Basta esibire il tuo biglietto virtuale (Salvaguardiamo l'ambiente)</p>
+                                </div>
+                                <hr>
+                        </div>
+                    </div>
+                </div>
             <div class="py-2" id='where'>
                 <div id="map" class="map"></div>
             </div>

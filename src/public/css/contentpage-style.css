@@ -3,12 +3,12 @@ h4 {
 }
 
 h2 {
-  color: #31d7cf
+  color: #fa4242
 }
 
 body {
-  background-color: #0c152f;
-  color:#ee2f7a;
+  background-color: #093313;
+  color:#dbdbdb;
   font-family: robotoMono, monospace;
   overflow-x: hidden;
 }
@@ -21,3 +21,6 @@ body {
 @media only screen and (min-width: 600px) {
   .pad15 { padding: 0 15%;}
 }
+
+a{color: #fa4242}
+a:hover{color: #fd7d7d}
