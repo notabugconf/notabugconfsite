@@ -22,7 +22,7 @@ window.setInterval(function () {
     toggleClass(document.getElementById('bug-egg-bottom'), "bug__image--animation--bottom");
 }, 42000);
 
-
+console.log('Cosa vai cercando?');
 
 var keyupping = false;
 var keyuptext = "";

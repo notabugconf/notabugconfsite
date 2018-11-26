@@ -7,42 +7,14 @@
                       <br>
                       <br>
                   </div>
-                  
+                  <% _.forEach(sponsors, function(sponsor) { %>
                   <div class="col-lg-4">
-                      <a href="https://lotrek.it" target="_blank" rel="nofollow">
-                          <img class="sponsor-img img-fluid mx-auto grayscale" src="public/images/sponsors/lotrek.png"
-                              alt="Lotrèk Digital Agency">
+                      <a href="<%- sponsor.url %>" target="_blank" rel="nofollow">
+                          <img class="sponsor-img img-fluid mx-auto grayscale" src="public/images/sponsors/<%- sponsor.image %>"
+                              alt="<%- sponsor.name %>">
                       </a>
                   </div>
-                  
-                  <div class="col-lg-4">
-                      <a href="https://www.facebook.com/groups/1703058016594724/" target="_blank" rel="nofollow">
-                          <img class="sponsor-img img-fluid mx-auto grayscale" src="public/images/sponsors/needfornerd.png"
-                              alt="Need for Nerd community">
-                      </a>
-                  </div>
-                  
-                  <div class="col-lg-4">
-                      <a href="https://fagiolistefano.com" target="_blank" rel="nofollow">
-                          <img class="sponsor-img img-fluid mx-auto grayscale" src="public/images/sponsors/fagioli.jpg"
-                              alt="Stefano Fagioli Assicurazioni">
-                      </a>
-                  </div>
-                  
-                  <div class="col-lg-4">
-                      <a href="https://www.etsy.com/it/shop/Tattakki" target="_blank" rel="nofollow">
-                          <img class="sponsor-img img-fluid mx-auto grayscale" src="public/images/sponsors/tattakki.jpg"
-                              alt="Tattakki">
-                      </a>
-                  </div>
-                  
-                  <div class="col-lg-4">
-                      <a href="https://python.pizza/" target="_blank" rel="nofollow">
-                          <img class="sponsor-img img-fluid mx-auto grayscale" src="public/images/sponsors/pypizza.png"
-                              alt="Python Pizza">
-                      </a>
-                  </div>
-                  
+                  <% }); %>
               </div>
           </div>
           <div class="alt-box">
@@ -102,7 +74,7 @@
               </figure>
           </div>
   </main>
-  <script src="public/js/main.min.js?v=2.0.1"></script>
+  <script src="public/js/main.min.js?v=<%- version %>"></script>
 
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA38H_bb3Xm5MVHF4lXEn_Wi4y7Vx43oo&callback=initGoogleMap">
 

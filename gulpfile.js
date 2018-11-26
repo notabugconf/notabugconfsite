@@ -62,12 +62,14 @@ gulp.task('fonts', function () {
 
 gulp.task('partials', function () {
     gulp.src([
-            'src/includes/body.html',
-            'src/includes/footer.html',
-            'src/includes/header.html'
+            'src/partials/body.html',
+            'src/partials/footer.html',
+            'src/partials/header.html',
+            'src/partials/effects.html',
+            'src/partials/facebook.html'
         ])
         .pipe(template(data))
-        .pipe(gulp.dest('src/partials'));
+        .pipe(gulp.dest('src/includes'));
 });
 
 gulp.task('html', function () {
