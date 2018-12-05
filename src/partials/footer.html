@@ -51,7 +51,8 @@
               <p>
                   <a href="privacy-policy.html">Privacy Policy</a> &middot;
                   <a href="code-of-conduct.html">Code Of Conduct</a> &middot;
-                  <a href="mailto:hello@notabug.it">Contattaci</a>
+                  <a href="mailto:hello@notabug.it">Contattaci</a> &middot;
+                  <a href="#" onclick="dd.showSettings();">Cookie settings</a>
               </p>
               <p>
                   <a href="http://bit.ly/notabug-fb" target="_blank" rel="nofollow">Facebook</a>
@@ -75,7 +76,42 @@
           </div>
   </main>
   <script src="public/js/main.min.js?v=<%- version %>"></script>
-
+    <script>
+        var dd = doria.prepare({
+            title: 'Informativa breve Cookie',
+            subtitle: "Questo sito utilizza cookie tecnici di prima parte e cookie analitici di terze parti per offrire agli utenti una migliore esperienza di navigazione e per raccogliere informazioni sull’utilizzo del sito stesso. Questo sito non utilizza cookie di profilazione. <br> <br>Per maggiori dettagli, consulti la nostra <a href='/privacy-policy.html' target='_blank'>Informativa  Privacy</a>:",
+            bannerDescription: "Doria utilizza i cookie per migliorare la tua esperienza nel sito. I cookie ti permettono di utilizzare alcune funzioni (come salvare il carrello), interagire con i social network (Facebook, Instagram, ecc.) e vedere messaggi e banner promozionali su misura per i tuoi interessi (sul nostro e sugli altri siti). Inoltre, ci permettono di analizzare l'utilizzo del nostro sito. Continuando a utilizzare il nostro sito acconsenti all'utilizzo dei cookie.",
+            beforeAccept: "Cliccando su Accetto acconsenti all'utilizzo di cookie tecnici di prima parte",
+            acceptButtonLabel: "Accetto",
+            settingsButtonLabel: "Impostazioni",
+            closeButtonLabel: "Chiudi"
+        });
+        dd.addCookieSettings(
+            'marketing',
+            'Marketing',
+            'Accetto l\'utilizzo di cookie analitici di terze parti',
+            ['_ga', '_gat', '_gid']
+        );
+        dd.on('marketing', function () {
+            console.log('Marketing cookies!');
+            window.ga = function () {
+                ga.q.push(arguments)
+            };
+            ga.q = [];
+            ga.l = +new Date;
+            ga('create', 'UA-XXXX-Y', {
+                "cookieDomain": "none"
+            });
+            ga('send', 'pageview');
+            doria.loadScript("https://www.google-analytics.com/analytics.js").then(function () {
+                console.log('the script is loaded!')
+            })
+        });
+        dd.onAccept(function () {
+            console.log('Yeah! 🍪');
+        });
+        dd.bake();
+    </script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA38H_bb3Xm5MVHF4lXEn_Wi4y7Vx43oo&callback=initGoogleMap">
 
 

@@ -1,0 +1,168 @@
+.doriabanner {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 1em;
+    padding: 1.5rem 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 110; }
+    .doriabanner__description {
+      padding: 0px 5%; }
+    .doriabanner__buttons {
+      padding: 0.5rem 5%; }
+      @media (min-width: 992px) {
+        .doriabanner__buttons {
+          text-align: right; } }
+    .doriabanner__button {
+      width: 100%;
+      cursor: pointer;
+      background-color: #0B457C;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 16px;
+      font-size: 0.9em;
+      margin: 0.2rem 0;
+      transition: box-shadow .3s; }
+      @media (min-width: 992px) {
+        .doriabanner__button {
+          width: auto;
+          margin: auto; } }
+      .doriabanner__button:hover {
+        background-color: #0a75d9;
+        box-shadow: 0 0 11px rgba(33, 33, 33, 0.2); }
+    .doriabanner--hidden {
+      pointer-events: none;
+      animation-name: invisible;
+      opacity: 0;
+      animation-duration: 0s;
+      animation-timing-function: ease-in-out; }
+  
+  @keyframes invisible {
+    from {
+      opacity: 1; }
+    to {
+      opacity: 0; } }
+  
+  .doriasettings {
+    background-color: white;
+    color: #010101;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    padding: 1.2rem 1.5rem;
+    position: relative;
+    top: 15%;
+    border-radius: 4px;
+    z-index: 120; }
+    @media (min-width: 992px) {
+      .doriasettings {
+        width: 600px;
+        margin: 0 auto; } }
+    .doriasettings__title {
+      font-weight: bold;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #010101; }
+    .doriasettings__subtitle {
+      padding-top: 1rem;
+      padding-bottom: 0.7rem; }
+    .doriasettings__wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 110; }
+      .doriasettings__wrapper--hidden {
+        pointer-events: none;
+        animation-name: invisible;
+        opacity: 0;
+        animation-duration: 0s;
+        animation-timing-function: ease-in-out; }
+    .doriasettings__button {
+      width: 100%;
+      cursor: pointer;
+      background-color: #0B457C;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 16px;
+      font-size: 0.9em;
+      margin: 0.2rem 0;
+      transition: box-shadow .3s; }
+      @media (min-width: 992px) {
+        .doriasettings__button {
+          width: auto;
+          margin: 0.5rem 0; } }
+      .doriasettings__button:hover {
+        background-color: #0a75d9;
+        box-shadow: 0 0 11px rgba(33, 33, 33, 0.2); }
+    .doriasettings__beforeaccept {
+      margin: 1rem 0; }
+  
+  .checkbox__wrapper {
+    margin-right: 0.5rem; }
+  
+  .checkbox__container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-self: center;
+    padding: 1rem 0; }
+  
+  .checkbox__description {
+    margin: 0.2rem 0; }
+  
+  .checkbox__label {
+    font-weight: bold; }
+  
+  .checkbox__input {
+    cursor: pointer;
+    position: relative; }
+  
+  .checkbox--custom {
+    position: absolute;
+    height: 1px;
+    width: 1px; }
+    .checkbox--custom:checked ~ .checkbox__value {
+      background-color: #8BC34A; }
+      .checkbox--custom:checked ~ .checkbox__value:after {
+        left: calc(90% - 20px); }
+      .checkbox--custom:checked ~ .checkbox__value:before {
+        content: '';
+        right: 0;
+        left: 10px; }
+  
+  .checkbox__value {
+    display: inline-block;
+    padding: 0.9rem 0.6rem;
+    min-width: 4rem;
+    position: relative;
+    background-color: #e53935;
+    transition: background-color 0.18s ease-in; }
+    .checkbox__value:after {
+      content: " ";
+      width: 20px;
+      height: 20px;
+      background-color: white;
+      left: 5%;
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      transition: left 0.15s; }
+    .checkbox__value:before {
+      position: absolute;
+      content: '';
+      color: white;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%); }
+  
+  @keyframes invisible {
+    from {
+      opacity: 1; }
+    to {
+      opacity: 0; } }
+  
+  

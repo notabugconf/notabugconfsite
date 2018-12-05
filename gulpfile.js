@@ -22,6 +22,7 @@ gulp.task('css', function () {
             'src/public/css/bootstrap.css',
             'src/public/css/easter-eggs.css',
             'src/public/css/style.css',
+            'src/public/css/doria.css',
         ])
         .pipe(csso({
             comments: false
@@ -47,6 +48,7 @@ gulp.task('js', function () {
             'src/public/js/bootstrap.js',
             'src/public/js/main.js',
             'src/public/js/easter-eggs.js',
+            'src/public/js/doria.js',
         ])
         .pipe(uglify())
         .pipe(concat('main.min.js'))
@@ -120,7 +122,7 @@ gulp.task('css-lint', function () {
 gulp.task('default', function () {
     gulp.watch('src/**/*.js', ['js-lint', 'js']);
     gulp.watch('src/**/*.css', ['css-lint', 'css']);
-    gulp.watch('src/**/*.html', ['html']);
+    gulp.watch('src/**/*.html', ['bundlehtml']);
 });
 
 
